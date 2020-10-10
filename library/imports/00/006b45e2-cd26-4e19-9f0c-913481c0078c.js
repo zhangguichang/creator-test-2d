@@ -49,6 +49,8 @@ var JoyStick = /** @class */ (function (_super) {
         this._r = this.joyStickNode.width / 2 - 50;
     };
     JoyStick.prototype.start = function () {
+        var node = cc.find('Canvas', this.node);
+        console.log(node);
     };
     JoyStick.prototype.addEventListener = function () {
         this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);

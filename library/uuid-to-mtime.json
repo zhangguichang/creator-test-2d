@@ -499,79 +499,89 @@
     "meta": 1602321521101,
     "relativePath": "model/primitives.fbx"
   },
+  "630d56fa-42f2-4aa2-90c3-f304b3d2e86d": {
+    "asset": 1602322349460,
+    "meta": 1602322481588,
+    "relativePath": "resources"
+  },
+  "eb16872e-7d15-4961-9a4c-382758183cac": {
+    "asset": 1602322349461,
+    "meta": 1602322481588,
+    "relativePath": "resources/prefab"
+  },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1602321511808,
-    "meta": 1602321521111,
+    "asset": 1602322349453,
+    "meta": 1602322481590,
     "relativePath": "Scene"
   },
+  "a3065ada-522d-4a5b-a796-228da3be5bb5": {
+    "asset": 1602322481592,
+    "meta": 1602322481592,
+    "relativePath": "resources/prefab/joystick.prefab"
+  },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1602321867125,
-    "meta": 1602321867138,
+    "asset": 1602322349455,
+    "meta": 1602322481593,
     "relativePath": "Script"
   },
   "e1b90feb-a217-4493-849d-9a611900d683": {
-    "asset": 1589177023000,
-    "meta": 1602321521234,
+    "asset": 1602322349454,
+    "meta": 1602322481611,
     "relativePath": "Script/Helloworld.ts"
   },
-  "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1602321645937,
-    "meta": 1602321867139,
-    "relativePath": "Texture"
-  },
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1602321908638,
-    "meta": 1602321908643,
-    "relativePath": "Scene/helloworld.fire"
-  },
-  "a8027877-d8d6-4645-97a0-52d4a0123dba": {
-    "asset": 1589177023000,
-    "meta": 1602321521254,
-    "relativePath": "Texture/singleColor.png"
-  },
-  "6aa0aa6a-ebee-4155-a088-a687a6aadec4": {
-    "asset": 1589177023000,
-    "meta": 1602321521273,
-    "relativePath": "Texture/HelloWorld.png"
-  },
-  "1e9398ff-616c-4440-a54e-885314aeb802": {
-    "asset": 1602321728321,
-    "meta": 1602321867140,
-    "relativePath": "Texture/joystick"
-  },
-  "630d56fa-42f2-4aa2-90c3-f304b3d2e86d": {
-    "asset": 1602321845984,
-    "meta": 1602321867136,
-    "relativePath": "resources"
-  },
-  "772e7519-bd2d-47db-8615-591378a6d26a": {
-    "asset": 1602321728316,
-    "meta": 1602321728356,
-    "relativePath": "Texture/joystick/ui_controlbutton_02.png"
-  },
-  "f75260c4-eb1e-4280-87b5-2d2697864b2e": {
-    "asset": 1602321728317,
-    "meta": 1602321728357,
-    "relativePath": "Texture/joystick/ui_controlbutton_01.png"
-  },
-  "eb16872e-7d15-4961-9a4c-382758183cac": {
-    "asset": 1602321848969,
-    "meta": 1602321867137,
-    "relativePath": "resources/prefab"
-  },
-  "a3065ada-522d-4a5b-a796-228da3be5bb5": {
-    "asset": 1602321897899,
-    "meta": 1602321897900,
-    "relativePath": "resources/prefab/joystick.prefab"
-  },
   "cbebf669-4e6f-4de3-b9be-61db2d1217a4": {
-    "asset": 1602310909176,
-    "meta": 1602321867138,
+    "asset": 1602322349455,
+    "meta": 1602322481613,
     "relativePath": "Script/joystick"
   },
+  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
+    "asset": 1602322349453,
+    "meta": 1602322481614,
+    "relativePath": "Scene/helloworld.fire"
+  },
+  "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
+    "asset": 1602322349459,
+    "meta": 1602322481652,
+    "relativePath": "Texture"
+  },
+  "1e9398ff-616c-4440-a54e-885314aeb802": {
+    "asset": 1602322349459,
+    "meta": 1602322481653,
+    "relativePath": "Texture/joystick"
+  },
+  "f75260c4-eb1e-4280-87b5-2d2697864b2e": {
+    "asset": 1602322349458,
+    "meta": 1602322481695,
+    "relativePath": "Texture/joystick/ui_controlbutton_01.png"
+  },
+  "6aa0aa6a-ebee-4155-a088-a687a6aadec4": {
+    "asset": 1602322349456,
+    "meta": 1602322481697,
+    "relativePath": "Texture/HelloWorld.png"
+  },
+  "a8027877-d8d6-4645-97a0-52d4a0123dba": {
+    "asset": 1602322349459,
+    "meta": 1602322481715,
+    "relativePath": "Texture/singleColor.png"
+  },
+  "772e7519-bd2d-47db-8615-591378a6d26a": {
+    "asset": 1602322349458,
+    "meta": 1602322481736,
+    "relativePath": "Texture/joystick/ui_controlbutton_02.png"
+  },
+  "1c4a560b-5c1e-42cb-b01e-c5ed6801bea1": {
+    "asset": 1602323999749,
+    "meta": 1602323999751,
+    "relativePath": "Script/event"
+  },
+  "d422668c-5e7d-4926-b881-cdce75af1657": {
+    "asset": 1602323611817,
+    "meta": 1602323999762,
+    "relativePath": "Script/event/EventMrg.ts"
+  },
   "006b45e2-cd26-4e19-9f0c-913481c0078c": {
-    "asset": 1602321927496,
-    "meta": 1602321960944,
+    "asset": 1602325695655,
+    "meta": 1602325701061,
     "relativePath": "Script/joystick/JoyStick.ts"
   }
 }
