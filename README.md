@@ -1,1 +1,2 @@
-# creator-test-2d
+# hello-world
+Hello world new project template.
