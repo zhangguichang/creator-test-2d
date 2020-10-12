@@ -520,8 +520,8 @@
     "relativePath": "resources/prefab/joystick.prefab"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1602322349455,
-    "meta": 1602322481593,
+    "asset": 1602323999748,
+    "meta": 1602473598696,
     "relativePath": "Script"
   },
   "e1b90feb-a217-4493-849d-9a611900d683": {
@@ -535,8 +535,8 @@
     "relativePath": "Script/joystick"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1602322349453,
-    "meta": 1602322481614,
+    "asset": 1602491841511,
+    "meta": 1602491841516,
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -575,13 +575,48 @@
     "relativePath": "Script/event"
   },
   "d422668c-5e7d-4926-b881-cdce75af1657": {
-    "asset": 1602323611817,
-    "meta": 1602323999762,
+    "asset": 1602469977539,
+    "meta": 1602470339652,
     "relativePath": "Script/event/EventMrg.ts"
   },
+  "3ceecf29-1a80-4905-b0d4-14c6eb36be6c": {
+    "asset": 1602473804877,
+    "meta": 1602473804917,
+    "relativePath": "New Effect.effect"
+  },
+  "d1628796-545f-4377-9430-b8dd79b786a5": {
+    "asset": 1602473878594,
+    "meta": 1602473878597,
+    "relativePath": "New Material.mtl"
+  },
   "006b45e2-cd26-4e19-9f0c-913481c0078c": {
-    "asset": 1602325695655,
-    "meta": 1602325701061,
+    "asset": 1602489459729,
+    "meta": 1602489460248,
     "relativePath": "Script/joystick/JoyStick.ts"
+  },
+  "ace02f82-3e23-4d88-87da-ab4d83fb7888": {
+    "asset": 1602491353112,
+    "meta": 1602491353119,
+    "relativePath": "Script/i18n"
+  },
+  "41eba568-3e94-40e0-aa7a-ed711d1df667": {
+    "asset": 1602491353113,
+    "meta": 1602491353167,
+    "relativePath": "Script/i18n/i18nLabel.ts"
+  },
+  "0ffbc6e5-f3dc-448f-9c98-607e124207fe": {
+    "asset": 1602491353113,
+    "meta": 1602491353254,
+    "relativePath": "Script/i18n/i18nSprite.ts"
+  },
+  "1e36a266-1e7b-43c6-a662-b38f61cb9da1": {
+    "asset": 1602491535638,
+    "meta": 1602491536253,
+    "relativePath": "Script/i18n/i18nMgr.ts"
+  },
+  "aa347040-7f63-4a5d-92c8-c7d0214ca034": {
+    "asset": 1602492882998,
+    "meta": 1602492917344,
+    "relativePath": "Script/CustomComponent.ts"
   }
 }

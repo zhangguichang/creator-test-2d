@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Script/Helloworld":1,"./assets/Script/joystick/JoyStick":2,"./assets/Script/event/EventMrg":3},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/Helloworld.js"},{"deps":{},"path":"preview-scripts/assets/Script/joystick/JoyStick.js"},{"deps":{},"path":"preview-scripts/assets/Script/event/EventMrg.js"}];
+var scripts = [{"deps":{"./assets/Script/CustomComponent":4,"./assets/Script/event/EventMrg":2,"./assets/Script/i18n/i18nMgr":6,"./assets/Script/i18n/i18nSprite":5,"./assets/Script/i18n/i18nLabel":7,"./assets/Script/joystick/JoyStick":3,"./assets/Script/Helloworld":1},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/Helloworld.js"},{"deps":{},"path":"preview-scripts/assets/Script/event/EventMrg.js"},{"deps":{},"path":"preview-scripts/assets/Script/joystick/JoyStick.js"},{"deps":{},"path":"preview-scripts/assets/Script/CustomComponent.js"},{"deps":{"./i18nMgr":6},"path":"preview-scripts/assets/Script/i18n/i18nSprite.js"},{"deps":{},"path":"preview-scripts/assets/Script/i18n/i18nMgr.js"},{"deps":{"./i18nMgr":6},"path":"preview-scripts/assets/Script/i18n/i18nLabel.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 var bundleScript = 'preview-scripts/__qc_bundle__.js';
 

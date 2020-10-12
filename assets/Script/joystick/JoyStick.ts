@@ -29,8 +29,7 @@ export default class JoyStick extends cc.Component {
         this._r = this.joyStickNode.width / 2 - 50;
     }
     start() {
-        let node = cc.find('Canvas', this.node);
-        console.log(node);
+        console.log("caonima -JoyStick");
     }
 
     addEventListener() {
