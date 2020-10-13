@@ -1,0 +1,14 @@
+{
+  "name": "texture",
+  "version": "1.0.0",
+  "description": "换图",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zgc",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.11.8"
+  }
+}

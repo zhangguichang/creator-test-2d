@@ -105,32 +105,6 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    "window-1602490982600": {
-      "main": false,
-      "url": "unpack://static/window.html",
-      "windowType": "dockable",
-      "x": 763,
-      "y": -795,
-      "width": 400,
-      "height": 322,
-      "layout": {
-        "children": [
-          {
-            "active": 0,
-            "children": [
-              "i18n-ahuang"
-            ],
-            "height": 300,
-            "type": "panel",
-            "width": 400
-          }
-        ],
-        "type": "dock-v"
-      },
-      "panels": [
-        "i18n-ahuang"
-      ]
     }
   },
   "panels": {
