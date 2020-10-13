@@ -33,6 +33,231 @@ require('./assets/Script/joystick/JoyStick');
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
+                    var __filename = 'preview-scripts/assets/Script/i18n/i18nLabel.js';
+                    var __require = nodeEnv ? function (request) {
+                        return cc.require(request);
+                    } : function (request) {
+                        return __quick_compile_project__.require(request, __filename);
+                    };
+                    function __define (exports, require, module) {
+                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
+cc._RF.push(module, '41ebaVoPpRA4Kp67XEdHfZn', 'i18nLabel');
+// Script/i18n/i18nLabel.ts
+
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.i18nLabel = void 0;
+var i18nMgr_1 = require("./i18nMgr");
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode, disallowMultiple = _a.disallowMultiple, requireComponent = _a.requireComponent, menu = _a.menu;
+var i18nLabel = /** @class */ (function (_super) {
+    __extends(i18nLabel, _super);
+    function i18nLabel() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.i18n_string = "";
+        _this.i18n_params = [];
+        return _this;
+    }
+    i18nLabel.prototype.start = function () {
+        i18nMgr_1.i18nMgr._addOrDelLabel(this, true);
+        this._resetValue();
+    };
+    Object.defineProperty(i18nLabel.prototype, "string", {
+        get: function () {
+            return this.i18n_string;
+        },
+        set: function (value) {
+            this.i18n_string = value;
+            var label = this.getComponent(cc.Label);
+            if (cc.isValid(label)) {
+                label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(i18nLabel.prototype, "params", {
+        get: function () {
+            return this.i18n_params;
+        },
+        set: function (value) {
+            this.i18n_params = value;
+            var label = this.getComponent(cc.Label);
+            if (cc.isValid(label)) {
+                label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    i18nLabel.prototype.init = function (string, params) {
+        this.i18n_string = string;
+        this.i18n_params = params;
+        var label = this.getComponent(cc.Label);
+        if (cc.isValid(label)) {
+            label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
+        }
+    };
+    i18nLabel.prototype._resetValue = function () {
+        this.string = this.i18n_string;
+    };
+    i18nLabel.prototype.onDestroy = function () {
+        i18nMgr_1.i18nMgr._addOrDelLabel(this, false);
+    };
+    __decorate([
+        property({ visible: false })
+    ], i18nLabel.prototype, "i18n_string", void 0);
+    __decorate([
+        property({ visible: false })
+    ], i18nLabel.prototype, "i18n_params", void 0);
+    __decorate([
+        property({ type: cc.String })
+    ], i18nLabel.prototype, "string", null);
+    __decorate([
+        property({ type: [cc.String] })
+    ], i18nLabel.prototype, "params", null);
+    i18nLabel = __decorate([
+        ccclass,
+        executeInEditMode,
+        requireComponent(cc.Label),
+        disallowMultiple,
+        menu("多语言/i18nLabel")
+    ], i18nLabel);
+    return i18nLabel;
+}(cc.Component));
+exports.i18nLabel = i18nLabel;
+
+cc._RF.pop();
+                    }
+                    if (nodeEnv) {
+                        __define(__module.exports, __require, __module);
+                    }
+                    else {
+                        __quick_compile_project__.registerModuleFunc(__filename, function () {
+                            __define(__module.exports, __require, __module);
+                        });
+                    }
+                })();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvaTE4bi9pMThuTGFiZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLHFDQUFvQztBQUM5QixJQUFBLEtBQXFGLEVBQUUsQ0FBQyxVQUFVLEVBQWhHLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBQSxFQUFFLGlCQUFpQix1QkFBQSxFQUFFLGdCQUFnQixzQkFBQSxFQUFFLGdCQUFnQixzQkFBQSxFQUFFLElBQUksVUFBa0IsQ0FBQztBQU96RztJQUErQiw2QkFBWTtJQUEzQztRQUFBLHFFQTBEQztRQXZEVyxpQkFBVyxHQUFXLEVBQUUsQ0FBQztRQUd6QixpQkFBVyxHQUFhLEVBQUUsQ0FBQzs7SUFvRHZDLENBQUM7SUFsREcseUJBQUssR0FBTDtRQUNJLGlCQUFPLENBQUMsY0FBYyxDQUFDLElBQUksRUFBRSxJQUFJLENBQUMsQ0FBQztRQUNuQyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7SUFDdkIsQ0FBQztJQUdELHNCQUFJLDZCQUFNO2FBQVY7WUFDSSxPQUFPLElBQUksQ0FBQyxXQUFXLENBQUM7UUFDNUIsQ0FBQzthQUVELFVBQVcsS0FBYTtZQUNwQixJQUFJLENBQUMsV0FBVyxHQUFHLEtBQUssQ0FBQztZQUV6QixJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUN4QyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7Z0JBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7YUFDeEU7UUFDTCxDQUFDOzs7T0FUQTtJQVlELHNCQUFJLDZCQUFNO2FBQVY7WUFDSSxPQUFPLElBQUksQ0FBQyxXQUFXLENBQUM7UUFDNUIsQ0FBQzthQUVELFVBQVcsS0FBZTtZQUN0QixJQUFJLENBQUMsV0FBVyxHQUFHLEtBQUssQ0FBQztZQUV6QixJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUN4QyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7Z0JBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7YUFDeEU7UUFDTCxDQUFDOzs7T0FUQTtJQVdELHdCQUFJLEdBQUosVUFBSyxNQUFjLEVBQUUsTUFBZ0I7UUFDakMsSUFBSSxDQUFDLFdBQVcsR0FBRyxNQUFNLENBQUM7UUFDMUIsSUFBSSxDQUFDLFdBQVcsR0FBRyxNQUFNLENBQUM7UUFFMUIsSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDeEMsSUFBSSxFQUFFLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxFQUFFO1lBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7U0FDeEU7SUFDTCxDQUFDO0lBRUQsK0JBQVcsR0FBWDtRQUNJLElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFdBQVcsQ0FBQztJQUNuQyxDQUFDO0lBRUQsNkJBQVMsR0FBVDtRQUNJLGlCQUFPLENBQUMsY0FBYyxDQUFDLElBQUksRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN4QyxDQUFDO0lBdEREO1FBREMsUUFBUSxDQUFDLEVBQUUsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO2tEQUNJO0lBR2pDO1FBREMsUUFBUSxDQUFDLEVBQUUsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO2tEQUNNO0lBUW5DO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxNQUFNLEVBQUUsQ0FBQzsyQ0FHN0I7SUFZRDtRQURDLFFBQVEsQ0FBQyxFQUFFLElBQUksRUFBRSxDQUFDLEVBQUUsQ0FBQyxNQUFNLENBQUMsRUFBRSxDQUFDOzJDQUcvQjtJQTlCUSxTQUFTO1FBTHJCLE9BQU87UUFDUCxpQkFBaUI7UUFDakIsZ0JBQWdCLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQztRQUMxQixnQkFBZ0I7UUFDaEIsSUFBSSxDQUFDLGVBQWUsQ0FBQztPQUNULFNBQVMsQ0EwRHJCO0lBQUQsZ0JBQUM7Q0ExREQsQUEwREMsQ0ExRDhCLEVBQUUsQ0FBQyxTQUFTLEdBMEQxQztBQTFEWSw4QkFBUyIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGkxOG5NZ3IgfSBmcm9tIFwiLi9pMThuTWdyXCI7XG5jb25zdCB7IGNjY2xhc3MsIHByb3BlcnR5LCBleGVjdXRlSW5FZGl0TW9kZSwgZGlzYWxsb3dNdWx0aXBsZSwgcmVxdWlyZUNvbXBvbmVudCwgbWVudSB9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbkBleGVjdXRlSW5FZGl0TW9kZVxuQHJlcXVpcmVDb21wb25lbnQoY2MuTGFiZWwpXG5AZGlzYWxsb3dNdWx0aXBsZVxuQG1lbnUoXCLlpJror63oqIAvaTE4bkxhYmVsXCIpXG5leHBvcnQgY2xhc3MgaTE4bkxhYmVsIGV4dGVuZHMgY2MuQ29tcG9uZW50IHtcblxuICAgIEBwcm9wZXJ0eSh7IHZpc2libGU6IGZhbHNlIH0pXG4gICAgcHJpdmF0ZSBpMThuX3N0cmluZzogc3RyaW5nID0gXCJcIjtcblxuICAgIEBwcm9wZXJ0eSh7IHZpc2libGU6IGZhbHNlIH0pXG4gICAgcHJpdmF0ZSBpMThuX3BhcmFtczogc3RyaW5nW10gPSBbXTtcblxuICAgIHN0YXJ0KCkge1xuICAgICAgICBpMThuTWdyLl9hZGRPckRlbExhYmVsKHRoaXMsIHRydWUpO1xuICAgICAgICB0aGlzLl9yZXNldFZhbHVlKCk7XG4gICAgfVxuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuU3RyaW5nIH0pXG4gICAgZ2V0IHN0cmluZygpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuaTE4bl9zdHJpbmc7XG4gICAgfVxuXG4gICAgc2V0IHN0cmluZyh2YWx1ZTogc3RyaW5nKSB7XG4gICAgICAgIHRoaXMuaTE4bl9zdHJpbmcgPSB2YWx1ZTtcblxuICAgICAgICBsZXQgbGFiZWwgPSB0aGlzLmdldENvbXBvbmVudChjYy5MYWJlbCk7XG4gICAgICAgIGlmIChjYy5pc1ZhbGlkKGxhYmVsKSkge1xuICAgICAgICAgICAgbGFiZWwuc3RyaW5nID0gaTE4bk1nci5fZ2V0TGFiZWwodGhpcy5pMThuX3N0cmluZywgdGhpcy5pMThuX3BhcmFtcyk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBAcHJvcGVydHkoeyB0eXBlOiBbY2MuU3RyaW5nXSB9KVxuICAgIGdldCBwYXJhbXMoKSB7XG4gICAgICAgIHJldHVybiB0aGlzLmkxOG5fcGFyYW1zO1xuICAgIH1cblxuICAgIHNldCBwYXJhbXModmFsdWU6IHN0cmluZ1tdKSB7XG4gICAgICAgIHRoaXMuaTE4bl9wYXJhbXMgPSB2YWx1ZTtcbiAgICAgICAgXG4gICAgICAgIGxldCBsYWJlbCA9IHRoaXMuZ2V0Q29tcG9uZW50KGNjLkxhYmVsKTtcbiAgICAgICAgaWYgKGNjLmlzVmFsaWQobGFiZWwpKSB7XG4gICAgICAgICAgICBsYWJlbC5zdHJpbmcgPSBpMThuTWdyLl9nZXRMYWJlbCh0aGlzLmkxOG5fc3RyaW5nLCB0aGlzLmkxOG5fcGFyYW1zKTtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIGluaXQoc3RyaW5nOiBzdHJpbmcsIHBhcmFtczogc3RyaW5nW10pIHtcbiAgICAgICAgdGhpcy5pMThuX3N0cmluZyA9IHN0cmluZztcbiAgICAgICAgdGhpcy5pMThuX3BhcmFtcyA9IHBhcmFtcztcblxuICAgICAgICBsZXQgbGFiZWwgPSB0aGlzLmdldENvbXBvbmVudChjYy5MYWJlbCk7XG4gICAgICAgIGlmIChjYy5pc1ZhbGlkKGxhYmVsKSkge1xuICAgICAgICAgICAgbGFiZWwuc3RyaW5nID0gaTE4bk1nci5fZ2V0TGFiZWwodGhpcy5pMThuX3N0cmluZywgdGhpcy5pMThuX3BhcmFtcyk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBfcmVzZXRWYWx1ZSgpIHtcbiAgICAgICAgdGhpcy5zdHJpbmcgPSB0aGlzLmkxOG5fc3RyaW5nO1xuICAgIH1cblxuICAgIG9uRGVzdHJveSgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxMYWJlbCh0aGlzLCBmYWxzZSk7XG4gICAgfVxufVxuXG4iXX0=
+//------QC-SOURCE-SPLIT------
+
+                (function() {
+                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
+                    var __module = nodeEnv ? module : {exports:{}};
+                    var __filename = 'preview-scripts/assets/Script/CustomComponent.js';
+                    var __require = nodeEnv ? function (request) {
+                        return cc.require(request);
+                    } : function (request) {
+                        return __quick_compile_project__.require(request, __filename);
+                    };
+                    function __define (exports, require, module) {
+                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
+cc._RF.push(module, 'aa347BAf2NKXZLIx9AhTKA0', 'CustomComponent');
+// Script/CustomComponent.ts
+
+"use strict";
+// Learn TypeScript:
+//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
+// Learn Attribute:
+//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executionOrder = _a.executionOrder, executeInEditMode = _a.executeInEditMode, menu = _a.menu, help = _a.help, inspector = _a.inspector;
+var CustomComponent = /** @class */ (function (_super) {
+    __extends(CustomComponent, _super);
+    function CustomComponent() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.radius = 100;
+        _this._ddd = 100;
+        return _this;
+        // update (dt) {}
+    }
+    Object.defineProperty(CustomComponent.prototype, "ddd", {
+        get: function () {
+            return this._ddd;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    // LIFE-CYCLE CALLBACKS:
+    CustomComponent.prototype.onLoad = function () {
+    };
+    CustomComponent.prototype.start = function () {
+    };
+    __decorate([
+        property
+    ], CustomComponent.prototype, "radius", void 0);
+    __decorate([
+        property({ displayName: "dddd" })
+    ], CustomComponent.prototype, "_ddd", void 0);
+    __decorate([
+        property()
+    ], CustomComponent.prototype, "ddd", null);
+    CustomComponent = __decorate([
+        ccclass,
+        executeInEditMode,
+        executionOrder(-1),
+        menu("自定义/CustomComponent")
+    ], CustomComponent);
+    return CustomComponent;
+}(cc.Component));
+exports.default = CustomComponent;
+
+cc._RF.pop();
+                    }
+                    if (nodeEnv) {
+                        __define(__module.exports, __require, __module);
+                    }
+                    else {
+                        __quick_compile_project__.registerModuleFunc(__filename, function () {
+                            __define(__module.exports, __require, __module);
+                        });
+                    }
+                })();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvQ3VzdG9tQ29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxvQkFBb0I7QUFDcEIsd0VBQXdFO0FBQ3hFLG1CQUFtQjtBQUNuQixrRkFBa0Y7QUFDbEYsOEJBQThCO0FBQzlCLGtGQUFrRjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRTVFLElBQUEsS0FBZ0YsRUFBRSxDQUFDLFVBQVUsRUFBM0YsT0FBTyxhQUFBLEVBQUUsUUFBUSxjQUFBLEVBQUUsY0FBYyxvQkFBQSxFQUFFLGlCQUFpQix1QkFBQSxFQUFFLElBQUksVUFBQSxFQUFDLElBQUksVUFBQSxFQUFDLFNBQVMsZUFBa0IsQ0FBQztBQUtwRztJQUE2QyxtQ0FBWTtJQUF6RDtRQUFBLHFFQXNCQztRQXBCRyxZQUFNLEdBQVcsR0FBRyxDQUFBO1FBR1osVUFBSSxHQUFXLEdBQUcsQ0FBQzs7UUFnQjNCLGlCQUFpQjtJQUNyQixDQUFDO0lBZEcsc0JBQVcsZ0NBQUc7YUFBZDtZQUNJLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQztRQUNyQixDQUFDOzs7T0FBQTtJQUdELHdCQUF3QjtJQUV4QixnQ0FBTSxHQUFOO0lBQ0EsQ0FBQztJQUVELCtCQUFLLEdBQUw7SUFDQSxDQUFDO0lBakJEO1FBREMsUUFBUTttREFDVztJQUdwQjtRQURDLFFBQVEsQ0FBQyxFQUFFLFdBQVcsRUFBRSxNQUFNLEVBQUUsQ0FBQztpREFDUDtJQUczQjtRQURDLFFBQVEsRUFBRTs4Q0FHVjtJQVZnQixlQUFlO1FBSm5DLE9BQU87UUFDUCxpQkFBaUI7UUFDakIsY0FBYyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ2xCLElBQUksQ0FBQyxxQkFBcUIsQ0FBQztPQUNQLGVBQWUsQ0FzQm5DO0lBQUQsc0JBQUM7Q0F0QkQsQUFzQkMsQ0F0QjRDLEVBQUUsQ0FBQyxTQUFTLEdBc0J4RDtrQkF0Qm9CLGVBQWUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyIvLyBMZWFybiBUeXBlU2NyaXB0OlxuLy8gIC0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyBMZWFybiBBdHRyaWJ1dGU6XG4vLyAgLSBodHRwczovL2RvY3MuY29jb3MuY29tL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9yZWZlcmVuY2UvYXR0cmlidXRlcy5odG1sXG4vLyBMZWFybiBsaWZlLWN5Y2xlIGNhbGxiYWNrczpcbi8vICAtIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL2xpZmUtY3ljbGUtY2FsbGJhY2tzLmh0bWxcblxuY29uc3QgeyBjY2NsYXNzLCBwcm9wZXJ0eSwgZXhlY3V0aW9uT3JkZXIsIGV4ZWN1dGVJbkVkaXRNb2RlLCBtZW51LGhlbHAsaW5zcGVjdG9yIH0gPSBjYy5fZGVjb3JhdG9yO1xuQGNjY2xhc3NcbkBleGVjdXRlSW5FZGl0TW9kZVxuQGV4ZWN1dGlvbk9yZGVyKC0xKVxuQG1lbnUoXCLoh6rlrprkuYkvQ3VzdG9tQ29tcG9uZW50XCIpXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBDdXN0b21Db21wb25lbnQgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuICAgIEBwcm9wZXJ0eVxuICAgIHJhZGl1czogbnVtYmVyID0gMTAwXG5cbiAgICBAcHJvcGVydHkoeyBkaXNwbGF5TmFtZTogXCJkZGRkXCIgfSlcbiAgICBwcml2YXRlIF9kZGQ6IG51bWJlciA9IDEwMDtcblxuICAgIEBwcm9wZXJ0eSgpXG4gICAgcHVibGljIGdldCBkZGQoKTogbnVtYmVyIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuX2RkZDtcbiAgICB9XG5cblxuICAgIC8vIExJRkUtQ1lDTEUgQ0FMTEJBQ0tTOlxuXG4gICAgb25Mb2FkKCkge1xuICAgIH1cblxuICAgIHN0YXJ0KCkge1xuICAgIH1cblxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
+//------QC-SOURCE-SPLIT------
+
+                (function() {
+                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
+                    var __module = nodeEnv ? module : {exports:{}};
                     var __filename = 'preview-scripts/assets/Script/Helloworld.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
@@ -156,218 +381,6 @@ cc._RF.pop();
                     }
                 })();
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvZXZlbnQvRXZlbnRNcmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0lBQThCLDRCQUFjO0lBQTVDOztJQUVBLENBQUM7SUFBRCxlQUFDO0FBQUQsQ0FGQSxBQUVDLENBRjZCLEVBQUUsQ0FBQyxXQUFXLEdBRTNDO0FBRlksNEJBQVEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgRXZlbnRNcmcgZXh0ZW5kcyBjYy5FdmVudFRhcmdldHtcbiAgICBcbn0iXX0=
-//------QC-SOURCE-SPLIT------
-
-                (function() {
-                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
-                    var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/joystick/JoyStick.js';
-                    var __require = nodeEnv ? function (request) {
-                        return cc.require(request);
-                    } : function (request) {
-                        return __quick_compile_project__.require(request, __filename);
-                    };
-                    function __define (exports, require, module) {
-                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, '006b4XizSZOGZ8MkTSBwAeM', 'JoyStick');
-// Script/joystick/JoyStick.ts
-
-"use strict";
-// Learn TypeScript:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var JoyStick = /** @class */ (function (_super) {
-    __extends(JoyStick, _super);
-    function JoyStick() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.joyStickNode = null;
-        _this.stick = null;
-        // 半径
-        _this._r = 0;
-        return _this;
-        // update (dt) {}
-    }
-    JoyStick.prototype.onLoad = function () {
-        this.addEventListener();
-        this._r = this.joyStickNode.width / 2 - 50;
-    };
-    JoyStick.prototype.start = function () {
-        console.log("caonima -JoyStick");
-    };
-    JoyStick.prototype.addEventListener = function () {
-        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
-    };
-    JoyStick.prototype.onTouchStart = function (event) {
-        var touchPos = this.node.convertToNodeSpaceAR(cc.v3(event.getLocation()));
-        this.joyStickNode.position = touchPos;
-    };
-    JoyStick.prototype.onTouchMove = function (event) {
-        var touchPos = this.joyStickNode.convertToNodeSpaceAR(cc.v3(event.getLocation()));
-        var distance = touchPos.mag();
-        var p = touchPos.normalize();
-        if (distance <= this._r) {
-            this.stick.position = touchPos;
-        }
-        else {
-            var ratio = this._r / distance;
-            var pos = cc.v3(0, 0).lerp(touchPos, ratio);
-            this.stick.position = pos;
-        }
-    };
-    JoyStick.prototype.onTouchEnd = function (event) {
-        this.stick.position = cc.v3(0, 0);
-    };
-    __decorate([
-        property({ type: cc.Node, displayName: "摇杆节点" })
-    ], JoyStick.prototype, "joyStickNode", void 0);
-    __decorate([
-        property({ type: cc.Node, displayName: "杆节点" })
-    ], JoyStick.prototype, "stick", void 0);
-    JoyStick = __decorate([
-        ccclass
-    ], JoyStick);
-    return JoyStick;
-}(cc.Component));
-exports.default = JoyStick;
-
-cc._RF.pop();
-                    }
-                    if (nodeEnv) {
-                        __define(__module.exports, __require, __module);
-                    }
-                    else {
-                        __quick_compile_project__.registerModuleFunc(__filename, function () {
-                            __define(__module.exports, __require, __module);
-                        });
-                    }
-                })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvam95c3RpY2svSm95U3RpY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLG9CQUFvQjtBQUNwQixrRkFBa0Y7QUFDbEYseUZBQXlGO0FBQ3pGLG1CQUFtQjtBQUNuQiw0RkFBNEY7QUFDNUYsbUdBQW1HO0FBQ25HLDhCQUE4QjtBQUM5Qiw0RkFBNEY7QUFDNUYsbUdBQW1HOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFN0YsSUFBQSxLQUF3QixFQUFFLENBQUMsVUFBVSxFQUFuQyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQWtCLENBQUM7QUFPNUM7SUFBc0MsNEJBQVk7SUFBbEQ7UUFBQSxxRUEyQ0M7UUF4Q0csa0JBQVksR0FBWSxJQUFJLENBQUM7UUFFN0IsV0FBSyxHQUFZLElBQUksQ0FBQztRQUV0QixLQUFLO1FBQ0csUUFBRSxHQUFXLENBQUMsQ0FBQzs7UUFrQ3ZCLGlCQUFpQjtJQUNyQixDQUFDO0lBbENHLHlCQUFNLEdBQU47UUFDSSxJQUFJLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsRUFBRSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7SUFDL0MsQ0FBQztJQUNELHdCQUFLLEdBQUw7UUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLENBQUM7SUFDckMsQ0FBQztJQUVELG1DQUFnQixHQUFoQjtRQUNJLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsWUFBWSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ3JFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsV0FBVyxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ25FLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ2pFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO0lBQ3hFLENBQUM7SUFDRCwrQkFBWSxHQUFaLFVBQWEsS0FBZTtRQUN4QixJQUFJLFFBQVEsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLG9CQUFvQixDQUFVLEVBQUUsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUNuRixJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7SUFDMUMsQ0FBQztJQUNELDhCQUFXLEdBQVgsVUFBWSxLQUFlO1FBQ3ZCLElBQUksUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsb0JBQW9CLENBQVUsRUFBRSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQzNGLElBQUksUUFBUSxHQUFHLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxRQUFRLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDN0IsSUFBSSxRQUFRLElBQUksSUFBSSxDQUFDLEVBQUUsRUFBRTtZQUNyQixJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7U0FDbEM7YUFBTTtZQUNILElBQUksS0FBSyxHQUFHLElBQUksQ0FBQyxFQUFFLEdBQUcsUUFBUSxDQUFDO1lBQy9CLElBQUksR0FBRyxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsS0FBSyxDQUFDLENBQUM7WUFDNUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUcsR0FBRyxDQUFDO1NBQzdCO0lBQ0wsQ0FBQztJQUNELDZCQUFVLEdBQVYsVUFBVyxLQUFlO1FBQ3RCLElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUF0Q0Q7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLElBQUksRUFBRSxXQUFXLEVBQUUsTUFBTSxFQUFFLENBQUM7a0RBQ3BCO0lBRTdCO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLEtBQUssRUFBRSxDQUFDOzJDQUMxQjtJQUxMLFFBQVE7UUFENUIsT0FBTztPQUNhLFFBQVEsQ0EyQzVCO0lBQUQsZUFBQztDQTNDRCxBQTJDQyxDQTNDcUMsRUFBRSxDQUFDLFNBQVMsR0EyQ2pEO2tCQTNDb0IsUUFBUSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbIi8vIExlYXJuIFR5cGVTY3JpcHQ6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyAgLSBbRW5nbGlzaF0gaHR0cDovL3d3dy5jb2NvczJkLXgub3JnL2RvY3MvY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL3R5cGVzY3JpcHQuaHRtbFxuLy8gTGVhcm4gQXR0cmlidXRlOlxuLy8gIC0gW0NoaW5lc2VdIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvemgvc2NyaXB0aW5nL3JlZmVyZW5jZS9hdHRyaWJ1dGVzLmh0bWxcbi8vICAtIFtFbmdsaXNoXSBodHRwOi8vd3d3LmNvY29zMmQteC5vcmcvZG9jcy9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvcmVmZXJlbmNlL2F0dHJpYnV0ZXMuaHRtbFxuLy8gTGVhcm4gbGlmZS1jeWNsZSBjYWxsYmFja3M6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvbGlmZS1jeWNsZS1jYWxsYmFja3MuaHRtbFxuLy8gIC0gW0VuZ2xpc2hdIGh0dHA6Ly93d3cuY29jb3MyZC14Lm9yZy9kb2NzL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9saWZlLWN5Y2xlLWNhbGxiYWNrcy5odG1sXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbmV4cG9ydCBpbnRlcmZhY2UgSUpveVN0aWNrRGF0YSB7XG4gICAgdmVjdG9yOiBjYy5WZWMzLFxufVxuXG5AY2NjbGFzc1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgSm95U3RpY2sgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuTm9kZSwgZGlzcGxheU5hbWU6IFwi5pGH5p2G6IqC54K5XCIgfSlcbiAgICBqb3lTdGlja05vZGU6IGNjLk5vZGUgPSBudWxsO1xuICAgIEBwcm9wZXJ0eSh7IHR5cGU6IGNjLk5vZGUsIGRpc3BsYXlOYW1lOiBcIuadhuiKgueCuVwiIH0pXG4gICAgc3RpY2s6IGNjLk5vZGUgPSBudWxsO1xuXG4gICAgLy8g5Y2K5b6EXG4gICAgcHJpdmF0ZSBfcjogbnVtYmVyID0gMDtcbiAgICBvbkxvYWQoKSB7XG4gICAgICAgIHRoaXMuYWRkRXZlbnRMaXN0ZW5lcigpO1xuICAgICAgICB0aGlzLl9yID0gdGhpcy5qb3lTdGlja05vZGUud2lkdGggLyAyIC0gNTA7XG4gICAgfVxuICAgIHN0YXJ0KCkge1xuICAgICAgICBjb25zb2xlLmxvZyhcImNhb25pbWEgLUpveVN0aWNrXCIpO1xuICAgIH1cblxuICAgIGFkZEV2ZW50TGlzdGVuZXIoKSB7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9TVEFSVCwgdGhpcy5vblRvdWNoU3RhcnQsIHRoaXMpO1xuICAgICAgICB0aGlzLm5vZGUub24oY2MuTm9kZS5FdmVudFR5cGUuVE9VQ0hfTU9WRSwgdGhpcy5vblRvdWNoTW92ZSwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9FTkQsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9DQU5DRUwsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgfVxuICAgIG9uVG91Y2hTdGFydChldmVudDogY2MuVG91Y2gpIHtcbiAgICAgICAgbGV0IHRvdWNoUG9zID0gdGhpcy5ub2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgdGhpcy5qb3lTdGlja05vZGUucG9zaXRpb24gPSB0b3VjaFBvcztcbiAgICB9XG4gICAgb25Ub3VjaE1vdmUoZXZlbnQ6IGNjLlRvdWNoKSB7XG4gICAgICAgIGxldCB0b3VjaFBvcyA9IHRoaXMuam95U3RpY2tOb2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgbGV0IGRpc3RhbmNlID0gdG91Y2hQb3MubWFnKCk7XG4gICAgICAgIGxldCBwID0gdG91Y2hQb3Mubm9ybWFsaXplKCk7XG4gICAgICAgIGlmIChkaXN0YW5jZSA8PSB0aGlzLl9yKSB7XG4gICAgICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gdG91Y2hQb3M7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBsZXQgcmF0aW8gPSB0aGlzLl9yIC8gZGlzdGFuY2U7XG4gICAgICAgICAgICBsZXQgcG9zID0gY2MudjMoMCwgMCkubGVycCh0b3VjaFBvcywgcmF0aW8pO1xuICAgICAgICAgICAgdGhpcy5zdGljay5wb3NpdGlvbiA9IHBvcztcbiAgICAgICAgfVxuICAgIH1cbiAgICBvblRvdWNoRW5kKGV2ZW50OiBjYy5Ub3VjaCkge1xuICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gY2MudjMoMCwgMCk7XG4gICAgfVxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
-//------QC-SOURCE-SPLIT------
-
-                (function() {
-                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
-                    var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/CustomComponent.js';
-                    var __require = nodeEnv ? function (request) {
-                        return cc.require(request);
-                    } : function (request) {
-                        return __quick_compile_project__.require(request, __filename);
-                    };
-                    function __define (exports, require, module) {
-                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, 'aa347BAf2NKXZLIx9AhTKA0', 'CustomComponent');
-// Script/CustomComponent.ts
-
-"use strict";
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executionOrder = _a.executionOrder, executeInEditMode = _a.executeInEditMode, menu = _a.menu, help = _a.help, inspector = _a.inspector;
-var CustomComponent = /** @class */ (function (_super) {
-    __extends(CustomComponent, _super);
-    function CustomComponent() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.radius = 100;
-        _this._ddd = 100;
-        return _this;
-        // update (dt) {}
-    }
-    Object.defineProperty(CustomComponent.prototype, "ddd", {
-        get: function () {
-            return this._ddd;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    // LIFE-CYCLE CALLBACKS:
-    CustomComponent.prototype.onLoad = function () {
-    };
-    CustomComponent.prototype.start = function () {
-    };
-    __decorate([
-        property
-    ], CustomComponent.prototype, "radius", void 0);
-    __decorate([
-        property({ displayName: "dddd" })
-    ], CustomComponent.prototype, "_ddd", void 0);
-    __decorate([
-        property()
-    ], CustomComponent.prototype, "ddd", null);
-    CustomComponent = __decorate([
-        ccclass,
-        executeInEditMode,
-        executionOrder(-1),
-        menu("自定义/CustomComponent")
-    ], CustomComponent);
-    return CustomComponent;
-}(cc.Component));
-exports.default = CustomComponent;
-
-cc._RF.pop();
-                    }
-                    if (nodeEnv) {
-                        __define(__module.exports, __require, __module);
-                    }
-                    else {
-                        __quick_compile_project__.registerModuleFunc(__filename, function () {
-                            __define(__module.exports, __require, __module);
-                        });
-                    }
-                })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvQ3VzdG9tQ29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxvQkFBb0I7QUFDcEIsd0VBQXdFO0FBQ3hFLG1CQUFtQjtBQUNuQixrRkFBa0Y7QUFDbEYsOEJBQThCO0FBQzlCLGtGQUFrRjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRTVFLElBQUEsS0FBZ0YsRUFBRSxDQUFDLFVBQVUsRUFBM0YsT0FBTyxhQUFBLEVBQUUsUUFBUSxjQUFBLEVBQUUsY0FBYyxvQkFBQSxFQUFFLGlCQUFpQix1QkFBQSxFQUFFLElBQUksVUFBQSxFQUFDLElBQUksVUFBQSxFQUFDLFNBQVMsZUFBa0IsQ0FBQztBQUtwRztJQUE2QyxtQ0FBWTtJQUF6RDtRQUFBLHFFQXNCQztRQXBCRyxZQUFNLEdBQVcsR0FBRyxDQUFBO1FBR1osVUFBSSxHQUFXLEdBQUcsQ0FBQzs7UUFnQjNCLGlCQUFpQjtJQUNyQixDQUFDO0lBZEcsc0JBQVcsZ0NBQUc7YUFBZDtZQUNJLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQztRQUNyQixDQUFDOzs7T0FBQTtJQUdELHdCQUF3QjtJQUV4QixnQ0FBTSxHQUFOO0lBQ0EsQ0FBQztJQUVELCtCQUFLLEdBQUw7SUFDQSxDQUFDO0lBakJEO1FBREMsUUFBUTttREFDVztJQUdwQjtRQURDLFFBQVEsQ0FBQyxFQUFFLFdBQVcsRUFBRSxNQUFNLEVBQUUsQ0FBQztpREFDUDtJQUczQjtRQURDLFFBQVEsRUFBRTs4Q0FHVjtJQVZnQixlQUFlO1FBSm5DLE9BQU87UUFDUCxpQkFBaUI7UUFDakIsY0FBYyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ2xCLElBQUksQ0FBQyxxQkFBcUIsQ0FBQztPQUNQLGVBQWUsQ0FzQm5DO0lBQUQsc0JBQUM7Q0F0QkQsQUFzQkMsQ0F0QjRDLEVBQUUsQ0FBQyxTQUFTLEdBc0J4RDtrQkF0Qm9CLGVBQWUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyIvLyBMZWFybiBUeXBlU2NyaXB0OlxuLy8gIC0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyBMZWFybiBBdHRyaWJ1dGU6XG4vLyAgLSBodHRwczovL2RvY3MuY29jb3MuY29tL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9yZWZlcmVuY2UvYXR0cmlidXRlcy5odG1sXG4vLyBMZWFybiBsaWZlLWN5Y2xlIGNhbGxiYWNrczpcbi8vICAtIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL2xpZmUtY3ljbGUtY2FsbGJhY2tzLmh0bWxcblxuY29uc3QgeyBjY2NsYXNzLCBwcm9wZXJ0eSwgZXhlY3V0aW9uT3JkZXIsIGV4ZWN1dGVJbkVkaXRNb2RlLCBtZW51LGhlbHAsaW5zcGVjdG9yIH0gPSBjYy5fZGVjb3JhdG9yO1xuQGNjY2xhc3NcbkBleGVjdXRlSW5FZGl0TW9kZVxuQGV4ZWN1dGlvbk9yZGVyKC0xKVxuQG1lbnUoXCLoh6rlrprkuYkvQ3VzdG9tQ29tcG9uZW50XCIpXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBDdXN0b21Db21wb25lbnQgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuICAgIEBwcm9wZXJ0eVxuICAgIHJhZGl1czogbnVtYmVyID0gMTAwXG5cbiAgICBAcHJvcGVydHkoeyBkaXNwbGF5TmFtZTogXCJkZGRkXCIgfSlcbiAgICBwcml2YXRlIF9kZGQ6IG51bWJlciA9IDEwMDtcblxuICAgIEBwcm9wZXJ0eSgpXG4gICAgcHVibGljIGdldCBkZGQoKTogbnVtYmVyIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuX2RkZDtcbiAgICB9XG5cblxuICAgIC8vIExJRkUtQ1lDTEUgQ0FMTEJBQ0tTOlxuXG4gICAgb25Mb2FkKCkge1xuICAgIH1cblxuICAgIHN0YXJ0KCkge1xuICAgIH1cblxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
 //------QC-SOURCE-SPLIT------
 
                 (function() {
@@ -607,7 +620,7 @@ cc._RF.pop();
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/i18n/i18nLabel.js';
+                    var __filename = 'preview-scripts/assets/Script/joystick/JoyStick.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
                     } : function (request) {
@@ -615,10 +628,19 @@ cc._RF.pop();
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, '41ebaVoPpRA4Kp67XEdHfZn', 'i18nLabel');
-// Script/i18n/i18nLabel.ts
+cc._RF.push(module, '006b4XizSZOGZ8MkTSBwAeM', 'JoyStick');
+// Script/joystick/JoyStick.ts
 
 "use strict";
+// Learn TypeScript:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
+// Learn Attribute:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -639,85 +661,63 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.i18nLabel = void 0;
-var i18nMgr_1 = require("./i18nMgr");
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode, disallowMultiple = _a.disallowMultiple, requireComponent = _a.requireComponent, menu = _a.menu;
-var i18nLabel = /** @class */ (function (_super) {
-    __extends(i18nLabel, _super);
-    function i18nLabel() {
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var JoyStick = /** @class */ (function (_super) {
+    __extends(JoyStick, _super);
+    function JoyStick() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.i18n_string = "";
-        _this.i18n_params = [];
+        _this.joyStickNode = null;
+        _this.stick = null;
+        // 半径
+        _this._r = 0;
         return _this;
+        // update (dt) {}
     }
-    i18nLabel.prototype.start = function () {
-        i18nMgr_1.i18nMgr._addOrDelLabel(this, true);
-        this._resetValue();
+    JoyStick.prototype.onLoad = function () {
+        this.addEventListener();
+        this._r = this.joyStickNode.width / 2 - 50;
     };
-    Object.defineProperty(i18nLabel.prototype, "string", {
-        get: function () {
-            return this.i18n_string;
-        },
-        set: function (value) {
-            this.i18n_string = value;
-            var label = this.getComponent(cc.Label);
-            if (cc.isValid(label)) {
-                label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
-            }
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(i18nLabel.prototype, "params", {
-        get: function () {
-            return this.i18n_params;
-        },
-        set: function (value) {
-            this.i18n_params = value;
-            var label = this.getComponent(cc.Label);
-            if (cc.isValid(label)) {
-                label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
-            }
-        },
-        enumerable: false,
-        configurable: true
-    });
-    i18nLabel.prototype.init = function (string, params) {
-        this.i18n_string = string;
-        this.i18n_params = params;
-        var label = this.getComponent(cc.Label);
-        if (cc.isValid(label)) {
-            label.string = i18nMgr_1.i18nMgr._getLabel(this.i18n_string, this.i18n_params);
+    JoyStick.prototype.start = function () {
+        console.log("caonima -JoyStick");
+    };
+    JoyStick.prototype.addEventListener = function () {
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
+    };
+    JoyStick.prototype.onTouchStart = function (event) {
+        var touchPos = this.node.convertToNodeSpaceAR(cc.v3(event.getLocation()));
+        this.joyStickNode.position = touchPos;
+    };
+    JoyStick.prototype.onTouchMove = function (event) {
+        var touchPos = this.joyStickNode.convertToNodeSpaceAR(cc.v3(event.getLocation()));
+        var distance = touchPos.mag();
+        var p = touchPos.normalize();
+        if (distance <= this._r) {
+            this.stick.position = touchPos;
+        }
+        else {
+            var ratio = this._r / distance;
+            var pos = cc.v3(0, 0).lerp(touchPos, ratio);
+            this.stick.position = pos;
         }
     };
-    i18nLabel.prototype._resetValue = function () {
-        this.string = this.i18n_string;
-    };
-    i18nLabel.prototype.onDestroy = function () {
-        i18nMgr_1.i18nMgr._addOrDelLabel(this, false);
+    JoyStick.prototype.onTouchEnd = function (event) {
+        this.stick.position = cc.v3(0, 0);
     };
     __decorate([
-        property({ visible: false })
-    ], i18nLabel.prototype, "i18n_string", void 0);
+        property({ type: cc.Node, displayName: "摇杆节点" })
+    ], JoyStick.prototype, "joyStickNode", void 0);
     __decorate([
-        property({ visible: false })
-    ], i18nLabel.prototype, "i18n_params", void 0);
-    __decorate([
-        property({ type: cc.String })
-    ], i18nLabel.prototype, "string", null);
-    __decorate([
-        property({ type: [cc.String] })
-    ], i18nLabel.prototype, "params", null);
-    i18nLabel = __decorate([
-        ccclass,
-        executeInEditMode,
-        requireComponent(cc.Label),
-        disallowMultiple,
-        menu("多语言/i18nLabel")
-    ], i18nLabel);
-    return i18nLabel;
+        property({ type: cc.Node, displayName: "杆节点" })
+    ], JoyStick.prototype, "stick", void 0);
+    JoyStick = __decorate([
+        ccclass
+    ], JoyStick);
+    return JoyStick;
 }(cc.Component));
-exports.i18nLabel = i18nLabel;
+exports.default = JoyStick;
 
 cc._RF.pop();
                     }
@@ -730,5 +730,5 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvaTE4bi9pMThuTGFiZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLHFDQUFvQztBQUM5QixJQUFBLEtBQXFGLEVBQUUsQ0FBQyxVQUFVLEVBQWhHLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBQSxFQUFFLGlCQUFpQix1QkFBQSxFQUFFLGdCQUFnQixzQkFBQSxFQUFFLGdCQUFnQixzQkFBQSxFQUFFLElBQUksVUFBa0IsQ0FBQztBQU96RztJQUErQiw2QkFBWTtJQUEzQztRQUFBLHFFQTBEQztRQXZEVyxpQkFBVyxHQUFXLEVBQUUsQ0FBQztRQUd6QixpQkFBVyxHQUFhLEVBQUUsQ0FBQzs7SUFvRHZDLENBQUM7SUFsREcseUJBQUssR0FBTDtRQUNJLGlCQUFPLENBQUMsY0FBYyxDQUFDLElBQUksRUFBRSxJQUFJLENBQUMsQ0FBQztRQUNuQyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7SUFDdkIsQ0FBQztJQUdELHNCQUFJLDZCQUFNO2FBQVY7WUFDSSxPQUFPLElBQUksQ0FBQyxXQUFXLENBQUM7UUFDNUIsQ0FBQzthQUVELFVBQVcsS0FBYTtZQUNwQixJQUFJLENBQUMsV0FBVyxHQUFHLEtBQUssQ0FBQztZQUV6QixJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUN4QyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7Z0JBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7YUFDeEU7UUFDTCxDQUFDOzs7T0FUQTtJQVlELHNCQUFJLDZCQUFNO2FBQVY7WUFDSSxPQUFPLElBQUksQ0FBQyxXQUFXLENBQUM7UUFDNUIsQ0FBQzthQUVELFVBQVcsS0FBZTtZQUN0QixJQUFJLENBQUMsV0FBVyxHQUFHLEtBQUssQ0FBQztZQUV6QixJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUN4QyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7Z0JBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7YUFDeEU7UUFDTCxDQUFDOzs7T0FUQTtJQVdELHdCQUFJLEdBQUosVUFBSyxNQUFjLEVBQUUsTUFBZ0I7UUFDakMsSUFBSSxDQUFDLFdBQVcsR0FBRyxNQUFNLENBQUM7UUFDMUIsSUFBSSxDQUFDLFdBQVcsR0FBRyxNQUFNLENBQUM7UUFFMUIsSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDeEMsSUFBSSxFQUFFLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxFQUFFO1lBQ25CLEtBQUssQ0FBQyxNQUFNLEdBQUcsaUJBQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7U0FDeEU7SUFDTCxDQUFDO0lBRUQsK0JBQVcsR0FBWDtRQUNJLElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFdBQVcsQ0FBQztJQUNuQyxDQUFDO0lBRUQsNkJBQVMsR0FBVDtRQUNJLGlCQUFPLENBQUMsY0FBYyxDQUFDLElBQUksRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN4QyxDQUFDO0lBdEREO1FBREMsUUFBUSxDQUFDLEVBQUUsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO2tEQUNJO0lBR2pDO1FBREMsUUFBUSxDQUFDLEVBQUUsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO2tEQUNNO0lBUW5DO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxNQUFNLEVBQUUsQ0FBQzsyQ0FHN0I7SUFZRDtRQURDLFFBQVEsQ0FBQyxFQUFFLElBQUksRUFBRSxDQUFDLEVBQUUsQ0FBQyxNQUFNLENBQUMsRUFBRSxDQUFDOzJDQUcvQjtJQTlCUSxTQUFTO1FBTHJCLE9BQU87UUFDUCxpQkFBaUI7UUFDakIsZ0JBQWdCLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQztRQUMxQixnQkFBZ0I7UUFDaEIsSUFBSSxDQUFDLGVBQWUsQ0FBQztPQUNULFNBQVMsQ0EwRHJCO0lBQUQsZ0JBQUM7Q0ExREQsQUEwREMsQ0ExRDhCLEVBQUUsQ0FBQyxTQUFTLEdBMEQxQztBQTFEWSw4QkFBUyIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGkxOG5NZ3IgfSBmcm9tIFwiLi9pMThuTWdyXCI7XG5jb25zdCB7IGNjY2xhc3MsIHByb3BlcnR5LCBleGVjdXRlSW5FZGl0TW9kZSwgZGlzYWxsb3dNdWx0aXBsZSwgcmVxdWlyZUNvbXBvbmVudCwgbWVudSB9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbkBleGVjdXRlSW5FZGl0TW9kZVxuQHJlcXVpcmVDb21wb25lbnQoY2MuTGFiZWwpXG5AZGlzYWxsb3dNdWx0aXBsZVxuQG1lbnUoXCLlpJror63oqIAvaTE4bkxhYmVsXCIpXG5leHBvcnQgY2xhc3MgaTE4bkxhYmVsIGV4dGVuZHMgY2MuQ29tcG9uZW50IHtcblxuICAgIEBwcm9wZXJ0eSh7IHZpc2libGU6IGZhbHNlIH0pXG4gICAgcHJpdmF0ZSBpMThuX3N0cmluZzogc3RyaW5nID0gXCJcIjtcblxuICAgIEBwcm9wZXJ0eSh7IHZpc2libGU6IGZhbHNlIH0pXG4gICAgcHJpdmF0ZSBpMThuX3BhcmFtczogc3RyaW5nW10gPSBbXTtcblxuICAgIHN0YXJ0KCkge1xuICAgICAgICBpMThuTWdyLl9hZGRPckRlbExhYmVsKHRoaXMsIHRydWUpO1xuICAgICAgICB0aGlzLl9yZXNldFZhbHVlKCk7XG4gICAgfVxuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuU3RyaW5nIH0pXG4gICAgZ2V0IHN0cmluZygpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuaTE4bl9zdHJpbmc7XG4gICAgfVxuXG4gICAgc2V0IHN0cmluZyh2YWx1ZTogc3RyaW5nKSB7XG4gICAgICAgIHRoaXMuaTE4bl9zdHJpbmcgPSB2YWx1ZTtcblxuICAgICAgICBsZXQgbGFiZWwgPSB0aGlzLmdldENvbXBvbmVudChjYy5MYWJlbCk7XG4gICAgICAgIGlmIChjYy5pc1ZhbGlkKGxhYmVsKSkge1xuICAgICAgICAgICAgbGFiZWwuc3RyaW5nID0gaTE4bk1nci5fZ2V0TGFiZWwodGhpcy5pMThuX3N0cmluZywgdGhpcy5pMThuX3BhcmFtcyk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBAcHJvcGVydHkoeyB0eXBlOiBbY2MuU3RyaW5nXSB9KVxuICAgIGdldCBwYXJhbXMoKSB7XG4gICAgICAgIHJldHVybiB0aGlzLmkxOG5fcGFyYW1zO1xuICAgIH1cblxuICAgIHNldCBwYXJhbXModmFsdWU6IHN0cmluZ1tdKSB7XG4gICAgICAgIHRoaXMuaTE4bl9wYXJhbXMgPSB2YWx1ZTtcbiAgICAgICAgXG4gICAgICAgIGxldCBsYWJlbCA9IHRoaXMuZ2V0Q29tcG9uZW50KGNjLkxhYmVsKTtcbiAgICAgICAgaWYgKGNjLmlzVmFsaWQobGFiZWwpKSB7XG4gICAgICAgICAgICBsYWJlbC5zdHJpbmcgPSBpMThuTWdyLl9nZXRMYWJlbCh0aGlzLmkxOG5fc3RyaW5nLCB0aGlzLmkxOG5fcGFyYW1zKTtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIGluaXQoc3RyaW5nOiBzdHJpbmcsIHBhcmFtczogc3RyaW5nW10pIHtcbiAgICAgICAgdGhpcy5pMThuX3N0cmluZyA9IHN0cmluZztcbiAgICAgICAgdGhpcy5pMThuX3BhcmFtcyA9IHBhcmFtcztcblxuICAgICAgICBsZXQgbGFiZWwgPSB0aGlzLmdldENvbXBvbmVudChjYy5MYWJlbCk7XG4gICAgICAgIGlmIChjYy5pc1ZhbGlkKGxhYmVsKSkge1xuICAgICAgICAgICAgbGFiZWwuc3RyaW5nID0gaTE4bk1nci5fZ2V0TGFiZWwodGhpcy5pMThuX3N0cmluZywgdGhpcy5pMThuX3BhcmFtcyk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBfcmVzZXRWYWx1ZSgpIHtcbiAgICAgICAgdGhpcy5zdHJpbmcgPSB0aGlzLmkxOG5fc3RyaW5nO1xuICAgIH1cblxuICAgIG9uRGVzdHJveSgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxMYWJlbCh0aGlzLCBmYWxzZSk7XG4gICAgfVxufVxuXG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvam95c3RpY2svSm95U3RpY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLG9CQUFvQjtBQUNwQixrRkFBa0Y7QUFDbEYseUZBQXlGO0FBQ3pGLG1CQUFtQjtBQUNuQiw0RkFBNEY7QUFDNUYsbUdBQW1HO0FBQ25HLDhCQUE4QjtBQUM5Qiw0RkFBNEY7QUFDNUYsbUdBQW1HOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFN0YsSUFBQSxLQUF3QixFQUFFLENBQUMsVUFBVSxFQUFuQyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQWtCLENBQUM7QUFPNUM7SUFBc0MsNEJBQVk7SUFBbEQ7UUFBQSxxRUEyQ0M7UUF4Q0csa0JBQVksR0FBWSxJQUFJLENBQUM7UUFFN0IsV0FBSyxHQUFZLElBQUksQ0FBQztRQUV0QixLQUFLO1FBQ0csUUFBRSxHQUFXLENBQUMsQ0FBQzs7UUFrQ3ZCLGlCQUFpQjtJQUNyQixDQUFDO0lBbENHLHlCQUFNLEdBQU47UUFDSSxJQUFJLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsRUFBRSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7SUFDL0MsQ0FBQztJQUNELHdCQUFLLEdBQUw7UUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLENBQUM7SUFDckMsQ0FBQztJQUVELG1DQUFnQixHQUFoQjtRQUNJLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsWUFBWSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ3JFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsV0FBVyxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ25FLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ2pFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO0lBQ3hFLENBQUM7SUFDRCwrQkFBWSxHQUFaLFVBQWEsS0FBZTtRQUN4QixJQUFJLFFBQVEsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLG9CQUFvQixDQUFVLEVBQUUsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUNuRixJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7SUFDMUMsQ0FBQztJQUNELDhCQUFXLEdBQVgsVUFBWSxLQUFlO1FBQ3ZCLElBQUksUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsb0JBQW9CLENBQVUsRUFBRSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQzNGLElBQUksUUFBUSxHQUFHLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxRQUFRLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDN0IsSUFBSSxRQUFRLElBQUksSUFBSSxDQUFDLEVBQUUsRUFBRTtZQUNyQixJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7U0FDbEM7YUFBTTtZQUNILElBQUksS0FBSyxHQUFHLElBQUksQ0FBQyxFQUFFLEdBQUcsUUFBUSxDQUFDO1lBQy9CLElBQUksR0FBRyxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsS0FBSyxDQUFDLENBQUM7WUFDNUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUcsR0FBRyxDQUFDO1NBQzdCO0lBQ0wsQ0FBQztJQUNELDZCQUFVLEdBQVYsVUFBVyxLQUFlO1FBQ3RCLElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUF0Q0Q7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLElBQUksRUFBRSxXQUFXLEVBQUUsTUFBTSxFQUFFLENBQUM7a0RBQ3BCO0lBRTdCO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLEtBQUssRUFBRSxDQUFDOzJDQUMxQjtJQUxMLFFBQVE7UUFENUIsT0FBTztPQUNhLFFBQVEsQ0EyQzVCO0lBQUQsZUFBQztDQTNDRCxBQTJDQyxDQTNDcUMsRUFBRSxDQUFDLFNBQVMsR0EyQ2pEO2tCQTNDb0IsUUFBUSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbIi8vIExlYXJuIFR5cGVTY3JpcHQ6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyAgLSBbRW5nbGlzaF0gaHR0cDovL3d3dy5jb2NvczJkLXgub3JnL2RvY3MvY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL3R5cGVzY3JpcHQuaHRtbFxuLy8gTGVhcm4gQXR0cmlidXRlOlxuLy8gIC0gW0NoaW5lc2VdIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvemgvc2NyaXB0aW5nL3JlZmVyZW5jZS9hdHRyaWJ1dGVzLmh0bWxcbi8vICAtIFtFbmdsaXNoXSBodHRwOi8vd3d3LmNvY29zMmQteC5vcmcvZG9jcy9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvcmVmZXJlbmNlL2F0dHJpYnV0ZXMuaHRtbFxuLy8gTGVhcm4gbGlmZS1jeWNsZSBjYWxsYmFja3M6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvbGlmZS1jeWNsZS1jYWxsYmFja3MuaHRtbFxuLy8gIC0gW0VuZ2xpc2hdIGh0dHA6Ly93d3cuY29jb3MyZC14Lm9yZy9kb2NzL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9saWZlLWN5Y2xlLWNhbGxiYWNrcy5odG1sXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbmV4cG9ydCBpbnRlcmZhY2UgSUpveVN0aWNrRGF0YSB7XG4gICAgdmVjdG9yOiBjYy5WZWMzLFxufVxuXG5AY2NjbGFzc1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgSm95U3RpY2sgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuTm9kZSwgZGlzcGxheU5hbWU6IFwi5pGH5p2G6IqC54K5XCIgfSlcbiAgICBqb3lTdGlja05vZGU6IGNjLk5vZGUgPSBudWxsO1xuICAgIEBwcm9wZXJ0eSh7IHR5cGU6IGNjLk5vZGUsIGRpc3BsYXlOYW1lOiBcIuadhuiKgueCuVwiIH0pXG4gICAgc3RpY2s6IGNjLk5vZGUgPSBudWxsO1xuXG4gICAgLy8g5Y2K5b6EXG4gICAgcHJpdmF0ZSBfcjogbnVtYmVyID0gMDtcbiAgICBvbkxvYWQoKSB7XG4gICAgICAgIHRoaXMuYWRkRXZlbnRMaXN0ZW5lcigpO1xuICAgICAgICB0aGlzLl9yID0gdGhpcy5qb3lTdGlja05vZGUud2lkdGggLyAyIC0gNTA7XG4gICAgfVxuICAgIHN0YXJ0KCkge1xuICAgICAgICBjb25zb2xlLmxvZyhcImNhb25pbWEgLUpveVN0aWNrXCIpO1xuICAgIH1cblxuICAgIGFkZEV2ZW50TGlzdGVuZXIoKSB7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9TVEFSVCwgdGhpcy5vblRvdWNoU3RhcnQsIHRoaXMpO1xuICAgICAgICB0aGlzLm5vZGUub24oY2MuTm9kZS5FdmVudFR5cGUuVE9VQ0hfTU9WRSwgdGhpcy5vblRvdWNoTW92ZSwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9FTkQsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9DQU5DRUwsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgfVxuICAgIG9uVG91Y2hTdGFydChldmVudDogY2MuVG91Y2gpIHtcbiAgICAgICAgbGV0IHRvdWNoUG9zID0gdGhpcy5ub2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgdGhpcy5qb3lTdGlja05vZGUucG9zaXRpb24gPSB0b3VjaFBvcztcbiAgICB9XG4gICAgb25Ub3VjaE1vdmUoZXZlbnQ6IGNjLlRvdWNoKSB7XG4gICAgICAgIGxldCB0b3VjaFBvcyA9IHRoaXMuam95U3RpY2tOb2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgbGV0IGRpc3RhbmNlID0gdG91Y2hQb3MubWFnKCk7XG4gICAgICAgIGxldCBwID0gdG91Y2hQb3Mubm9ybWFsaXplKCk7XG4gICAgICAgIGlmIChkaXN0YW5jZSA8PSB0aGlzLl9yKSB7XG4gICAgICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gdG91Y2hQb3M7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBsZXQgcmF0aW8gPSB0aGlzLl9yIC8gZGlzdGFuY2U7XG4gICAgICAgICAgICBsZXQgcG9zID0gY2MudjMoMCwgMCkubGVycCh0b3VjaFBvcywgcmF0aW8pO1xuICAgICAgICAgICAgdGhpcy5zdGljay5wb3NpdGlvbiA9IHBvcztcbiAgICAgICAgfVxuICAgIH1cbiAgICBvblRvdWNoRW5kKGV2ZW50OiBjYy5Ub3VjaCkge1xuICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gY2MudjMoMCwgMCk7XG4gICAgfVxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
 //------QC-SOURCE-SPLIT------

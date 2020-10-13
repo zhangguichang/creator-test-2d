@@ -40,12 +40,16 @@ exports.main = void 0;
 var fileTool_1 = require("./fileTool");
 function main() {
     return __awaiter(this, void 0, void 0, function () {
+        var imgDatas, fileDatas;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fileTool_1.FileUnit.readDir("../../assets", [fileTool_1.EnumFile.JPG, fileTool_1.EnumFile.PNG])];
+                case 0: return [4 /*yield*/, fileTool_1.FileUnit.readDir("../../assets")];
                 case 1:
                     _a.sent();
-                    console.log(fileTool_1.FileUnit.fileMap);
+                    imgDatas = fileTool_1.FileUnit.getFileDatasByFileType(fileTool_1.EnumFileType.IMG);
+                    fileDatas = fileTool_1.FileUnit.getFileDatasByFileType(fileTool_1.EnumFileType.FILE);
+                    console.log(imgDatas);
+                    console.log(fileDatas);
                     return [2 /*return*/];
             }
         });
