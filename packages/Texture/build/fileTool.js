@@ -39,114 +39,75 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FileUnit = exports.EnumFileType = exports.EnumFileSuffixType = void 0;
+exports.FileUnit = void 0;
 var fs_1 = require("fs");
 var path_1 = __importDefault(require("path"));
-// 文件后缀类型
-var EnumFileSuffixType;
-(function (EnumFileSuffixType) {
-    EnumFileSuffixType["PNG"] = "png";
-    EnumFileSuffixType["JPG"] = "jpg";
-    EnumFileSuffixType["PREFAB"] = "prefab";
-    EnumFileSuffixType["TS"] = "ts";
-})(EnumFileSuffixType = exports.EnumFileSuffixType || (exports.EnumFileSuffixType = {}));
-// 文件类型
-var EnumFileType;
-(function (EnumFileType) {
-    // 图片
-    EnumFileType[EnumFileType["IMG"] = 0] = "IMG";
-    // 文件
-    EnumFileType[EnumFileType["FILE"] = 1] = "FILE";
-})(EnumFileType = exports.EnumFileType || (exports.EnumFileType = {}));
+var enumFile_1 = require("./data/enumFile");
 var FileUnit = /** @class */ (function () {
     function FileUnit() {
     }
     /**
-     * 读取文件夹
-     * @param filePath 路径
+     * 去读文件或者文件夹
+     * @param srcPath
+     * @param fileCall
      */
-    FileUnit.readDir = function (filePath) {
+    FileUnit.read = function (srcPath, fileCall) {
         return __awaiter(this, void 0, void 0, function () {
-            var dirs;
+            var createFileData, exists, state, fileData, data, dirs;
             var _this = this;
             return __generator(this, function (_a) {
-                dirs = fs_1.readdirSync(filePath, "utf-8");
-                dirs.forEach(function (value, index, array) { return __awaiter(_this, void 0, void 0, function () {
-                    var nextPath, state;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                nextPath = path_1.default.join(filePath, value);
-                                state = fs_1.statSync(nextPath);
-                                if (!state.isFile()) return [3 /*break*/, 2];
-                                return [4 /*yield*/, this.readFile(nextPath)];
-                            case 1:
-                                _a.sent();
-                                return [3 /*break*/, 4];
-                            case 2: return [4 /*yield*/, this.readDir(nextPath)];
-                            case 3:
-                                _a.sent();
-                                _a.label = 4;
-                            case 4: return [2 /*return*/];
-                        }
-                    });
-                }); });
+                createFileData = function (srcPath, fileData) {
+                    var srcName = path_1.default.basename(srcPath);
+                    var suffixType = path_1.default.extname(srcName) || srcName;
+                    var fileType = _this.getEnumFileType(suffixType);
+                    var fileName = path_1.default.basename(srcName, suffixType) || srcName;
+                    var data = {
+                        // 地址
+                        path: srcPath,
+                        // 数据
+                        data: fileData,
+                        // 文件后缀类型
+                        fileSuffixType: suffixType,
+                        fileType: fileType,
+                        fileName: fileName
+                    };
+                    return data;
+                };
+                exists = fs_1.existsSync(srcPath);
+                if (exists) {
+                    state = fs_1.statSync(srcPath);
+                    if (state.isFile()) {
+                        fileData = fs_1.readFileSync(srcPath, { encoding: "utf-8" });
+                        data = createFileData(srcPath, fileData);
+                        fileCall && fileCall(data);
+                    }
+                    else if (state.isDirectory()) {
+                        dirs = fs_1.readdirSync(srcPath, "utf-8");
+                        dirs.forEach(function (value, index, array) { return __awaiter(_this, void 0, void 0, function () {
+                            var nextPath, state, fileData, data;
+                            return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0:
+                                        nextPath = path_1.default.join(srcPath, value);
+                                        state = fs_1.statSync(nextPath);
+                                        if (!state.isFile()) return [3 /*break*/, 1];
+                                        fileData = fs_1.readFileSync(nextPath, { encoding: "utf-8" });
+                                        data = createFileData(nextPath, fileData);
+                                        fileCall && fileCall(data);
+                                        return [3 /*break*/, 3];
+                                    case 1: return [4 /*yield*/, this.read(nextPath, fileCall)];
+                                    case 2:
+                                        _a.sent();
+                                        _a.label = 3;
+                                    case 3: return [2 /*return*/];
+                                }
+                            });
+                        }); });
+                    }
+                }
                 return [2 /*return*/];
             });
         });
-    };
-    /**
-     * 读取文件
-     * @param path 文件路径
-     */
-    FileUnit.readFile = function (path) {
-        return __awaiter(this, void 0, void 0, function () {
-            var file, fileSuffixType, fileType, data, fileData;
-            return __generator(this, function (_a) {
-                file = path.split(".");
-                fileSuffixType = file[file.length - 1];
-                fileType = this.getEnumFileType(fileSuffixType);
-                data = fs_1.readFileSync(path, { encoding: "utf-8" });
-                fileData = {
-                    // 地址
-                    path: path,
-                    // 数据
-                    data: data,
-                    // 文件后缀类型
-                    fileSuffixType: fileSuffixType,
-                    // 文件类型
-                    fileType: fileType
-                };
-                this.fileMap.set(path, fileData);
-                return [2 /*return*/, data];
-            });
-        });
-    };
-    /**
-     * 根据文件类型获取数据
-     * @param fileSuffixType
-     */
-    FileUnit.getFileDatasByFileSuffixType = function (fileSuffixType) {
-        var arr = [];
-        this.fileMap.forEach(function (value, key, map) {
-            if (value.fileSuffixType == fileSuffixType) {
-                arr.push(value);
-            }
-        });
-        return arr;
-    };
-    /**
-   * 根据文件类型获取数据
-   * @param fileType
-   */
-    FileUnit.getFileDatasByFileType = function (fileType) {
-        var arr = [];
-        this.fileMap.forEach(function (value, key, map) {
-            if (value.fileType == fileType) {
-                arr.push(value);
-            }
-        });
-        return arr;
     };
     /**
      * 获取文件类型
@@ -154,14 +115,63 @@ var FileUnit = /** @class */ (function () {
      */
     FileUnit.getEnumFileType = function (fileSuffixType) {
         switch (fileSuffixType) {
-            case EnumFileSuffixType.JPG:
-            case EnumFileSuffixType.PNG:
-                return EnumFileType.IMG;
+            case enumFile_1.EnumFileSuffixType.JPG:
+            case enumFile_1.EnumFileSuffixType.PNG:
+                return enumFile_1.EnumFileType.IMG;
             default:
-                return EnumFileType.FILE;
+                return enumFile_1.EnumFileType.FILE;
         }
     };
-    FileUnit.fileMap = new Map();
+    /**
+     * 删除文件夹
+     * @param srcPath
+     */
+    FileUnit.delete = function (srcPath) {
+        return __awaiter(this, void 0, void 0, function () {
+            var exists, state, files;
+            var _this = this;
+            return __generator(this, function (_a) {
+                exists = fs_1.existsSync(srcPath);
+                if (exists) {
+                    state = fs_1.statSync(srcPath);
+                    if (state.isDirectory()) {
+                        files = fs_1.readdirSync(srcPath);
+                        files.forEach(function (value, index, array) { return __awaiter(_this, void 0, void 0, function () {
+                            var nextPath, fileState;
+                            return __generator(this, function (_a) {
+                                nextPath = path_1.default.join(srcPath, value);
+                                fileState = fs_1.statSync(nextPath);
+                                if (fileState.isDirectory()) {
+                                    this.delete(nextPath);
+                                }
+                                else {
+                                    fs_1.unlinkSync(nextPath);
+                                }
+                                return [2 /*return*/];
+                            });
+                        }); });
+                        fs_1.rmdirSync(srcPath);
+                    }
+                    else if (state.isFile()) {
+                        fs_1.unlinkSync(srcPath);
+                    }
+                }
+                return [2 /*return*/];
+            });
+        });
+    };
+    /**
+     * 复制
+     * @param srcPath
+     * @param dstPath
+     */
+    FileUnit.copy = function (srcPath, dstPath) {
+        var readable = fs_1.createReadStream(srcPath);
+        // 创建写入流
+        var writable = fs_1.createWriteStream(dstPath);
+        // 通过管道来传输流
+        readable.pipe(writable);
+    };
     return FileUnit;
 }());
 exports.FileUnit = FileUnit;

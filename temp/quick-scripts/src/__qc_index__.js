@@ -6,3 +6,4 @@ require('./assets/Script/i18n/i18nLabel');
 require('./assets/Script/i18n/i18nMgr');
 require('./assets/Script/i18n/i18nSprite');
 require('./assets/Script/joystick/JoyStick');
+require('./assets/tempAssets/test');

@@ -17,6 +17,7 @@ require('./assets/Script/i18n/i18nLabel');
 require('./assets/Script/i18n/i18nMgr');
 require('./assets/Script/i18n/i18nSprite');
 require('./assets/Script/joystick/JoyStick');
+require('./assets/tempAssets/test');
 
                     }
                     if (nodeEnv) {
@@ -162,6 +163,59 @@ cc._RF.pop();
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
+                    var __filename = 'preview-scripts/assets/Script/event/EventMrg.js';
+                    var __require = nodeEnv ? function (request) {
+                        return cc.require(request);
+                    } : function (request) {
+                        return __quick_compile_project__.require(request, __filename);
+                    };
+                    function __define (exports, require, module) {
+                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
+cc._RF.push(module, 'd4226aMXn1JJriBzc51rxZX', 'EventMrg');
+// Script/event/EventMrg.ts
+
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventMrg = void 0;
+var EventMrg = /** @class */ (function (_super) {
+    __extends(EventMrg, _super);
+    function EventMrg() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return EventMrg;
+}(cc.EventTarget));
+exports.EventMrg = EventMrg;
+
+cc._RF.pop();
+                    }
+                    if (nodeEnv) {
+                        __define(__module.exports, __require, __module);
+                    }
+                    else {
+                        __quick_compile_project__.registerModuleFunc(__filename, function () {
+                            __define(__module.exports, __require, __module);
+                        });
+                    }
+                })();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvZXZlbnQvRXZlbnRNcmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0lBQThCLDRCQUFjO0lBQTVDOztJQUVBLENBQUM7SUFBRCxlQUFDO0FBQUQsQ0FGQSxBQUVDLENBRjZCLEVBQUUsQ0FBQyxXQUFXLEdBRTNDO0FBRlksNEJBQVEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgRXZlbnRNcmcgZXh0ZW5kcyBjYy5FdmVudFRhcmdldHtcbiAgICBcbn0iXX0=
+//------QC-SOURCE-SPLIT------
+
+                (function() {
+                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
+                    var __module = nodeEnv ? module : {exports:{}};
                     var __filename = 'preview-scripts/assets/Script/CustomComponent.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
@@ -258,6 +312,122 @@ cc._RF.pop();
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
+                    var __filename = 'preview-scripts/assets/Script/joystick/JoyStick.js';
+                    var __require = nodeEnv ? function (request) {
+                        return cc.require(request);
+                    } : function (request) {
+                        return __quick_compile_project__.require(request, __filename);
+                    };
+                    function __define (exports, require, module) {
+                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
+cc._RF.push(module, '006b4XizSZOGZ8MkTSBwAeM', 'JoyStick');
+// Script/joystick/JoyStick.ts
+
+"use strict";
+// Learn TypeScript:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
+// Learn Attribute:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var JoyStick = /** @class */ (function (_super) {
+    __extends(JoyStick, _super);
+    function JoyStick() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.joyStickNode = null;
+        _this.stick = null;
+        // 半径
+        _this._r = 0;
+        return _this;
+        // update (dt) {}
+    }
+    JoyStick.prototype.onLoad = function () {
+        this.addEventListener();
+        this._r = this.joyStickNode.width / 2 - 50;
+    };
+    JoyStick.prototype.start = function () {
+        console.log("caonima -JoyStick");
+    };
+    JoyStick.prototype.addEventListener = function () {
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
+    };
+    JoyStick.prototype.onTouchStart = function (event) {
+        var touchPos = this.node.convertToNodeSpaceAR(cc.v3(event.getLocation()));
+        this.joyStickNode.position = touchPos;
+    };
+    JoyStick.prototype.onTouchMove = function (event) {
+        var touchPos = this.joyStickNode.convertToNodeSpaceAR(cc.v3(event.getLocation()));
+        var distance = touchPos.mag();
+        var p = touchPos.normalize();
+        if (distance <= this._r) {
+            this.stick.position = touchPos;
+        }
+        else {
+            var ratio = this._r / distance;
+            var pos = cc.v3(0, 0).lerp(touchPos, ratio);
+            this.stick.position = pos;
+        }
+    };
+    JoyStick.prototype.onTouchEnd = function (event) {
+        this.stick.position = cc.v3(0, 0);
+    };
+    __decorate([
+        property({ type: cc.Node, displayName: "摇杆节点" })
+    ], JoyStick.prototype, "joyStickNode", void 0);
+    __decorate([
+        property({ type: cc.Node, displayName: "杆节点" })
+    ], JoyStick.prototype, "stick", void 0);
+    JoyStick = __decorate([
+        ccclass
+    ], JoyStick);
+    return JoyStick;
+}(cc.Component));
+exports.default = JoyStick;
+
+cc._RF.pop();
+                    }
+                    if (nodeEnv) {
+                        __define(__module.exports, __require, __module);
+                    }
+                    else {
+                        __quick_compile_project__.registerModuleFunc(__filename, function () {
+                            __define(__module.exports, __require, __module);
+                        });
+                    }
+                })();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvam95c3RpY2svSm95U3RpY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLG9CQUFvQjtBQUNwQixrRkFBa0Y7QUFDbEYseUZBQXlGO0FBQ3pGLG1CQUFtQjtBQUNuQiw0RkFBNEY7QUFDNUYsbUdBQW1HO0FBQ25HLDhCQUE4QjtBQUM5Qiw0RkFBNEY7QUFDNUYsbUdBQW1HOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFN0YsSUFBQSxLQUF3QixFQUFFLENBQUMsVUFBVSxFQUFuQyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQWtCLENBQUM7QUFPNUM7SUFBc0MsNEJBQVk7SUFBbEQ7UUFBQSxxRUEyQ0M7UUF4Q0csa0JBQVksR0FBWSxJQUFJLENBQUM7UUFFN0IsV0FBSyxHQUFZLElBQUksQ0FBQztRQUV0QixLQUFLO1FBQ0csUUFBRSxHQUFXLENBQUMsQ0FBQzs7UUFrQ3ZCLGlCQUFpQjtJQUNyQixDQUFDO0lBbENHLHlCQUFNLEdBQU47UUFDSSxJQUFJLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsRUFBRSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7SUFDL0MsQ0FBQztJQUNELHdCQUFLLEdBQUw7UUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLENBQUM7SUFDckMsQ0FBQztJQUVELG1DQUFnQixHQUFoQjtRQUNJLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsWUFBWSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ3JFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsV0FBVyxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ25FLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ2pFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO0lBQ3hFLENBQUM7SUFDRCwrQkFBWSxHQUFaLFVBQWEsS0FBZTtRQUN4QixJQUFJLFFBQVEsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLG9CQUFvQixDQUFVLEVBQUUsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUNuRixJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7SUFDMUMsQ0FBQztJQUNELDhCQUFXLEdBQVgsVUFBWSxLQUFlO1FBQ3ZCLElBQUksUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsb0JBQW9CLENBQVUsRUFBRSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQzNGLElBQUksUUFBUSxHQUFHLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxRQUFRLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDN0IsSUFBSSxRQUFRLElBQUksSUFBSSxDQUFDLEVBQUUsRUFBRTtZQUNyQixJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7U0FDbEM7YUFBTTtZQUNILElBQUksS0FBSyxHQUFHLElBQUksQ0FBQyxFQUFFLEdBQUcsUUFBUSxDQUFDO1lBQy9CLElBQUksR0FBRyxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsS0FBSyxDQUFDLENBQUM7WUFDNUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUcsR0FBRyxDQUFDO1NBQzdCO0lBQ0wsQ0FBQztJQUNELDZCQUFVLEdBQVYsVUFBVyxLQUFlO1FBQ3RCLElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUF0Q0Q7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLElBQUksRUFBRSxXQUFXLEVBQUUsTUFBTSxFQUFFLENBQUM7a0RBQ3BCO0lBRTdCO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLEtBQUssRUFBRSxDQUFDOzJDQUMxQjtJQUxMLFFBQVE7UUFENUIsT0FBTztPQUNhLFFBQVEsQ0EyQzVCO0lBQUQsZUFBQztDQTNDRCxBQTJDQyxDQTNDcUMsRUFBRSxDQUFDLFNBQVMsR0EyQ2pEO2tCQTNDb0IsUUFBUSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbIi8vIExlYXJuIFR5cGVTY3JpcHQ6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyAgLSBbRW5nbGlzaF0gaHR0cDovL3d3dy5jb2NvczJkLXgub3JnL2RvY3MvY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL3R5cGVzY3JpcHQuaHRtbFxuLy8gTGVhcm4gQXR0cmlidXRlOlxuLy8gIC0gW0NoaW5lc2VdIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvemgvc2NyaXB0aW5nL3JlZmVyZW5jZS9hdHRyaWJ1dGVzLmh0bWxcbi8vICAtIFtFbmdsaXNoXSBodHRwOi8vd3d3LmNvY29zMmQteC5vcmcvZG9jcy9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvcmVmZXJlbmNlL2F0dHJpYnV0ZXMuaHRtbFxuLy8gTGVhcm4gbGlmZS1jeWNsZSBjYWxsYmFja3M6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvbGlmZS1jeWNsZS1jYWxsYmFja3MuaHRtbFxuLy8gIC0gW0VuZ2xpc2hdIGh0dHA6Ly93d3cuY29jb3MyZC14Lm9yZy9kb2NzL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9saWZlLWN5Y2xlLWNhbGxiYWNrcy5odG1sXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbmV4cG9ydCBpbnRlcmZhY2UgSUpveVN0aWNrRGF0YSB7XG4gICAgdmVjdG9yOiBjYy5WZWMzLFxufVxuXG5AY2NjbGFzc1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgSm95U3RpY2sgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuTm9kZSwgZGlzcGxheU5hbWU6IFwi5pGH5p2G6IqC54K5XCIgfSlcbiAgICBqb3lTdGlja05vZGU6IGNjLk5vZGUgPSBudWxsO1xuICAgIEBwcm9wZXJ0eSh7IHR5cGU6IGNjLk5vZGUsIGRpc3BsYXlOYW1lOiBcIuadhuiKgueCuVwiIH0pXG4gICAgc3RpY2s6IGNjLk5vZGUgPSBudWxsO1xuXG4gICAgLy8g5Y2K5b6EXG4gICAgcHJpdmF0ZSBfcjogbnVtYmVyID0gMDtcbiAgICBvbkxvYWQoKSB7XG4gICAgICAgIHRoaXMuYWRkRXZlbnRMaXN0ZW5lcigpO1xuICAgICAgICB0aGlzLl9yID0gdGhpcy5qb3lTdGlja05vZGUud2lkdGggLyAyIC0gNTA7XG4gICAgfVxuICAgIHN0YXJ0KCkge1xuICAgICAgICBjb25zb2xlLmxvZyhcImNhb25pbWEgLUpveVN0aWNrXCIpO1xuICAgIH1cblxuICAgIGFkZEV2ZW50TGlzdGVuZXIoKSB7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9TVEFSVCwgdGhpcy5vblRvdWNoU3RhcnQsIHRoaXMpO1xuICAgICAgICB0aGlzLm5vZGUub24oY2MuTm9kZS5FdmVudFR5cGUuVE9VQ0hfTU9WRSwgdGhpcy5vblRvdWNoTW92ZSwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9FTkQsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9DQU5DRUwsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgfVxuICAgIG9uVG91Y2hTdGFydChldmVudDogY2MuVG91Y2gpIHtcbiAgICAgICAgbGV0IHRvdWNoUG9zID0gdGhpcy5ub2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgdGhpcy5qb3lTdGlja05vZGUucG9zaXRpb24gPSB0b3VjaFBvcztcbiAgICB9XG4gICAgb25Ub3VjaE1vdmUoZXZlbnQ6IGNjLlRvdWNoKSB7XG4gICAgICAgIGxldCB0b3VjaFBvcyA9IHRoaXMuam95U3RpY2tOb2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgbGV0IGRpc3RhbmNlID0gdG91Y2hQb3MubWFnKCk7XG4gICAgICAgIGxldCBwID0gdG91Y2hQb3Mubm9ybWFsaXplKCk7XG4gICAgICAgIGlmIChkaXN0YW5jZSA8PSB0aGlzLl9yKSB7XG4gICAgICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gdG91Y2hQb3M7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBsZXQgcmF0aW8gPSB0aGlzLl9yIC8gZGlzdGFuY2U7XG4gICAgICAgICAgICBsZXQgcG9zID0gY2MudjMoMCwgMCkubGVycCh0b3VjaFBvcywgcmF0aW8pO1xuICAgICAgICAgICAgdGhpcy5zdGljay5wb3NpdGlvbiA9IHBvcztcbiAgICAgICAgfVxuICAgIH1cbiAgICBvblRvdWNoRW5kKGV2ZW50OiBjYy5Ub3VjaCkge1xuICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gY2MudjMoMCwgMCk7XG4gICAgfVxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
+//------QC-SOURCE-SPLIT------
+
+                (function() {
+                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
+                    var __module = nodeEnv ? module : {exports:{}};
                     var __filename = 'preview-scripts/assets/Script/Helloworld.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
@@ -328,163 +498,6 @@ cc._RF.pop();
                     }
                 })();
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvSGVsbG93b3JsZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBTSxJQUFBLEtBQXNCLEVBQUUsQ0FBQyxVQUFVLEVBQWxDLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBaUIsQ0FBQztBQUcxQztJQUF3Qyw4QkFBWTtJQUFwRDtRQUFBLHFFQVlDO1FBVEcsV0FBSyxHQUFhLElBQUksQ0FBQztRQUd2QixVQUFJLEdBQVcsT0FBTyxDQUFDOztJQU0zQixDQUFDO0lBSkcsMEJBQUssR0FBTDtRQUNJLGFBQWE7UUFDYixJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDO0lBQ2xDLENBQUM7SUFSRDtRQURDLFFBQVEsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDOzZDQUNJO0lBR3ZCO1FBREMsUUFBUTs0Q0FDYztJQU5OLFVBQVU7UUFEOUIsT0FBTztPQUNhLFVBQVUsQ0FZOUI7SUFBRCxpQkFBQztDQVpELEFBWUMsQ0FadUMsRUFBRSxDQUFDLFNBQVMsR0FZbkQ7a0JBWm9CLFVBQVUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCB7Y2NjbGFzcywgcHJvcGVydHl9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIEhlbGxvd29ybGQgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgQHByb3BlcnR5KGNjLkxhYmVsKVxuICAgIGxhYmVsOiBjYy5MYWJlbCA9IG51bGw7XG5cbiAgICBAcHJvcGVydHlcbiAgICB0ZXh0OiBzdHJpbmcgPSAnaGVsbG8nO1xuXG4gICAgc3RhcnQgKCkge1xuICAgICAgICAvLyBpbml0IGxvZ2ljXG4gICAgICAgIHRoaXMubGFiZWwuc3RyaW5nID0gdGhpcy50ZXh0O1xuICAgIH1cbn1cbiJdfQ==
-//------QC-SOURCE-SPLIT------
-
-                (function() {
-                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
-                    var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/event/EventMrg.js';
-                    var __require = nodeEnv ? function (request) {
-                        return cc.require(request);
-                    } : function (request) {
-                        return __quick_compile_project__.require(request, __filename);
-                    };
-                    function __define (exports, require, module) {
-                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, 'd4226aMXn1JJriBzc51rxZX', 'EventMrg');
-// Script/event/EventMrg.ts
-
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.EventMrg = void 0;
-var EventMrg = /** @class */ (function (_super) {
-    __extends(EventMrg, _super);
-    function EventMrg() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return EventMrg;
-}(cc.EventTarget));
-exports.EventMrg = EventMrg;
-
-cc._RF.pop();
-                    }
-                    if (nodeEnv) {
-                        __define(__module.exports, __require, __module);
-                    }
-                    else {
-                        __quick_compile_project__.registerModuleFunc(__filename, function () {
-                            __define(__module.exports, __require, __module);
-                        });
-                    }
-                })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvZXZlbnQvRXZlbnRNcmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0lBQThCLDRCQUFjO0lBQTVDOztJQUVBLENBQUM7SUFBRCxlQUFDO0FBQUQsQ0FGQSxBQUVDLENBRjZCLEVBQUUsQ0FBQyxXQUFXLEdBRTNDO0FBRlksNEJBQVEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgRXZlbnRNcmcgZXh0ZW5kcyBjYy5FdmVudFRhcmdldHtcbiAgICBcbn0iXX0=
-//------QC-SOURCE-SPLIT------
-
-                (function() {
-                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
-                    var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/i18n/i18nSprite.js';
-                    var __require = nodeEnv ? function (request) {
-                        return cc.require(request);
-                    } : function (request) {
-                        return __quick_compile_project__.require(request, __filename);
-                    };
-                    function __define (exports, require, module) {
-                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, '0ffbcbl89xEj5yYYH4SQgf+', 'i18nSprite');
-// Script/i18n/i18nSprite.ts
-
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.i18nSprite = void 0;
-var i18nMgr_1 = require("./i18nMgr");
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode, disallowMultiple = _a.disallowMultiple, requireComponent = _a.requireComponent, menu = _a.menu;
-var i18nSprite = /** @class */ (function (_super) {
-    __extends(i18nSprite, _super);
-    function i18nSprite() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.i18n_string = "";
-        return _this;
-    }
-    i18nSprite.prototype.start = function () {
-        i18nMgr_1.i18nMgr._addOrDelSprite(this, true);
-        this._resetValue();
-    };
-    Object.defineProperty(i18nSprite.prototype, "string", {
-        get: function () {
-            return this.i18n_string;
-        },
-        set: function (value) {
-            this.i18n_string = value;
-            var sprite = this.getComponent(cc.Sprite);
-            if (cc.isValid(sprite)) {
-                i18nMgr_1.i18nMgr._getSprite(value, function (spriteFrame) {
-                    if (cc.isValid(sprite)) {
-                        sprite.spriteFrame = spriteFrame;
-                    }
-                });
-            }
-        },
-        enumerable: false,
-        configurable: true
-    });
-    i18nSprite.prototype._resetValue = function () {
-        this.string = this.i18n_string;
-    };
-    i18nSprite.prototype.onDestroy = function () {
-        i18nMgr_1.i18nMgr._addOrDelSprite(this, false);
-    };
-    __decorate([
-        property({ visible: false })
-    ], i18nSprite.prototype, "i18n_string", void 0);
-    __decorate([
-        property({ type: cc.String })
-    ], i18nSprite.prototype, "string", null);
-    i18nSprite = __decorate([
-        ccclass,
-        executeInEditMode,
-        requireComponent(cc.Sprite),
-        disallowMultiple,
-        menu("多语言/i18nSprite")
-    ], i18nSprite);
-    return i18nSprite;
-}(cc.Component));
-exports.i18nSprite = i18nSprite;
-
-cc._RF.pop();
-                    }
-                    if (nodeEnv) {
-                        __define(__module.exports, __require, __module);
-                    }
-                    else {
-                        __quick_compile_project__.registerModuleFunc(__filename, function () {
-                            __define(__module.exports, __require, __module);
-                        });
-                    }
-                })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvaTE4bi9pMThuU3ByaXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxxQ0FBb0M7QUFDOUIsSUFBQSxLQUFxRixFQUFFLENBQUMsVUFBVSxFQUFoRyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQUEsRUFBRSxpQkFBaUIsdUJBQUEsRUFBRSxnQkFBZ0Isc0JBQUEsRUFBRSxnQkFBZ0Isc0JBQUEsRUFBRSxJQUFJLFVBQWtCLENBQUM7QUFPekc7SUFBZ0MsOEJBQVk7SUFBNUM7UUFBQSxxRUFtQ0M7UUFoQ1csaUJBQVcsR0FBVyxFQUFFLENBQUM7O0lBZ0NyQyxDQUFDO0lBOUJHLDBCQUFLLEdBQUw7UUFDSSxpQkFBTyxDQUFDLGVBQWUsQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUM7UUFDcEMsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO0lBQ3ZCLENBQUM7SUFHRCxzQkFBSSw4QkFBTTthQUFWO1lBQ0ksT0FBTyxJQUFJLENBQUMsV0FBVyxDQUFDO1FBQzVCLENBQUM7YUFFRCxVQUFXLEtBQWE7WUFDcEIsSUFBSSxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUM7WUFFekIsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxFQUFFLENBQUMsTUFBTSxDQUFDLENBQUM7WUFDMUMsSUFBSSxFQUFFLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxFQUFFO2dCQUNwQixpQkFBTyxDQUFDLFVBQVUsQ0FBQyxLQUFLLEVBQUUsVUFBQyxXQUFXO29CQUNsQyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7d0JBQ3BCLE1BQU0sQ0FBQyxXQUFXLEdBQUcsV0FBVyxDQUFDO3FCQUNwQztnQkFDTCxDQUFDLENBQUMsQ0FBQzthQUNOO1FBQ0wsQ0FBQzs7O09BYkE7SUFlRCxnQ0FBVyxHQUFYO1FBQ0ksSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDO0lBQ25DLENBQUM7SUFFRCw4QkFBUyxHQUFUO1FBQ0ksaUJBQU8sQ0FBQyxlQUFlLENBQUMsSUFBSSxFQUFFLEtBQUssQ0FBQyxDQUFDO0lBQ3pDLENBQUM7SUEvQkQ7UUFEQyxRQUFRLENBQUMsRUFBRSxPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7bURBQ0k7SUFRakM7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLE1BQU0sRUFBRSxDQUFDOzRDQUc3QjtJQWJRLFVBQVU7UUFMdEIsT0FBTztRQUNQLGlCQUFpQjtRQUNqQixnQkFBZ0IsQ0FBQyxFQUFFLENBQUMsTUFBTSxDQUFDO1FBQzNCLGdCQUFnQjtRQUNoQixJQUFJLENBQUMsZ0JBQWdCLENBQUM7T0FDVixVQUFVLENBbUN0QjtJQUFELGlCQUFDO0NBbkNELEFBbUNDLENBbkMrQixFQUFFLENBQUMsU0FBUyxHQW1DM0M7QUFuQ1ksZ0NBQVUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBpMThuTWdyIH0gZnJvbSBcIi4vaTE4bk1nclwiO1xuY29uc3QgeyBjY2NsYXNzLCBwcm9wZXJ0eSwgZXhlY3V0ZUluRWRpdE1vZGUsIGRpc2FsbG93TXVsdGlwbGUsIHJlcXVpcmVDb21wb25lbnQsIG1lbnUgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5AZXhlY3V0ZUluRWRpdE1vZGVcbkByZXF1aXJlQ29tcG9uZW50KGNjLlNwcml0ZSlcbkBkaXNhbGxvd011bHRpcGxlXG5AbWVudShcIuWkmuivreiogC9pMThuU3ByaXRlXCIpXG5leHBvcnQgY2xhc3MgaTE4blNwcml0ZSBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG5cbiAgICBAcHJvcGVydHkoeyB2aXNpYmxlOiBmYWxzZSB9KVxuICAgIHByaXZhdGUgaTE4bl9zdHJpbmc6IHN0cmluZyA9IFwiXCI7XG5cbiAgICBzdGFydCgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxTcHJpdGUodGhpcywgdHJ1ZSk7XG4gICAgICAgIHRoaXMuX3Jlc2V0VmFsdWUoKTtcbiAgICB9XG5cbiAgICBAcHJvcGVydHkoeyB0eXBlOiBjYy5TdHJpbmcgfSlcbiAgICBnZXQgc3RyaW5nKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5pMThuX3N0cmluZztcbiAgICB9XG5cbiAgICBzZXQgc3RyaW5nKHZhbHVlOiBzdHJpbmcpIHtcbiAgICAgICAgdGhpcy5pMThuX3N0cmluZyA9IHZhbHVlO1xuXG4gICAgICAgIGxldCBzcHJpdGUgPSB0aGlzLmdldENvbXBvbmVudChjYy5TcHJpdGUpO1xuICAgICAgICBpZiAoY2MuaXNWYWxpZChzcHJpdGUpKSB7XG4gICAgICAgICAgICBpMThuTWdyLl9nZXRTcHJpdGUodmFsdWUsIChzcHJpdGVGcmFtZSkgPT4ge1xuICAgICAgICAgICAgICAgIGlmIChjYy5pc1ZhbGlkKHNwcml0ZSkpIHtcbiAgICAgICAgICAgICAgICAgICAgc3ByaXRlLnNwcml0ZUZyYW1lID0gc3ByaXRlRnJhbWU7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBfcmVzZXRWYWx1ZSgpIHtcbiAgICAgICAgdGhpcy5zdHJpbmcgPSB0aGlzLmkxOG5fc3RyaW5nO1xuICAgIH1cblxuICAgIG9uRGVzdHJveSgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxTcHJpdGUodGhpcywgZmFsc2UpO1xuICAgIH1cbn1cbiJdfQ==
 //------QC-SOURCE-SPLIT------
 
                 (function() {
@@ -620,7 +633,7 @@ cc._RF.pop();
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/Script/joystick/JoyStick.js';
+                    var __filename = 'preview-scripts/assets/Script/i18n/i18nSprite.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
                     } : function (request) {
@@ -628,19 +641,10 @@ cc._RF.pop();
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, '006b4XizSZOGZ8MkTSBwAeM', 'JoyStick');
-// Script/joystick/JoyStick.ts
+cc._RF.push(module, '0ffbcbl89xEj5yYYH4SQgf+', 'i18nSprite');
+// Script/i18n/i18nSprite.ts
 
 "use strict";
-// Learn TypeScript:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -661,63 +665,60 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var JoyStick = /** @class */ (function (_super) {
-    __extends(JoyStick, _super);
-    function JoyStick() {
+exports.i18nSprite = void 0;
+var i18nMgr_1 = require("./i18nMgr");
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode, disallowMultiple = _a.disallowMultiple, requireComponent = _a.requireComponent, menu = _a.menu;
+var i18nSprite = /** @class */ (function (_super) {
+    __extends(i18nSprite, _super);
+    function i18nSprite() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.joyStickNode = null;
-        _this.stick = null;
-        // 半径
-        _this._r = 0;
+        _this.i18n_string = "";
         return _this;
-        // update (dt) {}
     }
-    JoyStick.prototype.onLoad = function () {
-        this.addEventListener();
-        this._r = this.joyStickNode.width / 2 - 50;
+    i18nSprite.prototype.start = function () {
+        i18nMgr_1.i18nMgr._addOrDelSprite(this, true);
+        this._resetValue();
     };
-    JoyStick.prototype.start = function () {
-        console.log("caonima -JoyStick");
+    Object.defineProperty(i18nSprite.prototype, "string", {
+        get: function () {
+            return this.i18n_string;
+        },
+        set: function (value) {
+            this.i18n_string = value;
+            var sprite = this.getComponent(cc.Sprite);
+            if (cc.isValid(sprite)) {
+                i18nMgr_1.i18nMgr._getSprite(value, function (spriteFrame) {
+                    if (cc.isValid(sprite)) {
+                        sprite.spriteFrame = spriteFrame;
+                    }
+                });
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    i18nSprite.prototype._resetValue = function () {
+        this.string = this.i18n_string;
     };
-    JoyStick.prototype.addEventListener = function () {
-        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
-    };
-    JoyStick.prototype.onTouchStart = function (event) {
-        var touchPos = this.node.convertToNodeSpaceAR(cc.v3(event.getLocation()));
-        this.joyStickNode.position = touchPos;
-    };
-    JoyStick.prototype.onTouchMove = function (event) {
-        var touchPos = this.joyStickNode.convertToNodeSpaceAR(cc.v3(event.getLocation()));
-        var distance = touchPos.mag();
-        var p = touchPos.normalize();
-        if (distance <= this._r) {
-            this.stick.position = touchPos;
-        }
-        else {
-            var ratio = this._r / distance;
-            var pos = cc.v3(0, 0).lerp(touchPos, ratio);
-            this.stick.position = pos;
-        }
-    };
-    JoyStick.prototype.onTouchEnd = function (event) {
-        this.stick.position = cc.v3(0, 0);
+    i18nSprite.prototype.onDestroy = function () {
+        i18nMgr_1.i18nMgr._addOrDelSprite(this, false);
     };
     __decorate([
-        property({ type: cc.Node, displayName: "摇杆节点" })
-    ], JoyStick.prototype, "joyStickNode", void 0);
+        property({ visible: false })
+    ], i18nSprite.prototype, "i18n_string", void 0);
     __decorate([
-        property({ type: cc.Node, displayName: "杆节点" })
-    ], JoyStick.prototype, "stick", void 0);
-    JoyStick = __decorate([
-        ccclass
-    ], JoyStick);
-    return JoyStick;
+        property({ type: cc.String })
+    ], i18nSprite.prototype, "string", null);
+    i18nSprite = __decorate([
+        ccclass,
+        executeInEditMode,
+        requireComponent(cc.Sprite),
+        disallowMultiple,
+        menu("多语言/i18nSprite")
+    ], i18nSprite);
+    return i18nSprite;
 }(cc.Component));
-exports.default = JoyStick;
+exports.i18nSprite = i18nSprite;
 
 cc._RF.pop();
                     }
@@ -730,5 +731,35 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvam95c3RpY2svSm95U3RpY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLG9CQUFvQjtBQUNwQixrRkFBa0Y7QUFDbEYseUZBQXlGO0FBQ3pGLG1CQUFtQjtBQUNuQiw0RkFBNEY7QUFDNUYsbUdBQW1HO0FBQ25HLDhCQUE4QjtBQUM5Qiw0RkFBNEY7QUFDNUYsbUdBQW1HOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFN0YsSUFBQSxLQUF3QixFQUFFLENBQUMsVUFBVSxFQUFuQyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQWtCLENBQUM7QUFPNUM7SUFBc0MsNEJBQVk7SUFBbEQ7UUFBQSxxRUEyQ0M7UUF4Q0csa0JBQVksR0FBWSxJQUFJLENBQUM7UUFFN0IsV0FBSyxHQUFZLElBQUksQ0FBQztRQUV0QixLQUFLO1FBQ0csUUFBRSxHQUFXLENBQUMsQ0FBQzs7UUFrQ3ZCLGlCQUFpQjtJQUNyQixDQUFDO0lBbENHLHlCQUFNLEdBQU47UUFDSSxJQUFJLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsRUFBRSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7SUFDL0MsQ0FBQztJQUNELHdCQUFLLEdBQUw7UUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLENBQUM7SUFDckMsQ0FBQztJQUVELG1DQUFnQixHQUFoQjtRQUNJLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsWUFBWSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ3JFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsV0FBVyxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ25FLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO1FBQ2pFLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsVUFBVSxFQUFFLElBQUksQ0FBQyxDQUFDO0lBQ3hFLENBQUM7SUFDRCwrQkFBWSxHQUFaLFVBQWEsS0FBZTtRQUN4QixJQUFJLFFBQVEsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLG9CQUFvQixDQUFVLEVBQUUsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUNuRixJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7SUFDMUMsQ0FBQztJQUNELDhCQUFXLEdBQVgsVUFBWSxLQUFlO1FBQ3ZCLElBQUksUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsb0JBQW9CLENBQVUsRUFBRSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQzNGLElBQUksUUFBUSxHQUFHLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxRQUFRLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDN0IsSUFBSSxRQUFRLElBQUksSUFBSSxDQUFDLEVBQUUsRUFBRTtZQUNyQixJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7U0FDbEM7YUFBTTtZQUNILElBQUksS0FBSyxHQUFHLElBQUksQ0FBQyxFQUFFLEdBQUcsUUFBUSxDQUFDO1lBQy9CLElBQUksR0FBRyxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxRQUFRLEVBQUUsS0FBSyxDQUFDLENBQUM7WUFDNUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUcsR0FBRyxDQUFDO1NBQzdCO0lBQ0wsQ0FBQztJQUNELDZCQUFVLEdBQVYsVUFBVyxLQUFlO1FBQ3RCLElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUF0Q0Q7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLElBQUksRUFBRSxXQUFXLEVBQUUsTUFBTSxFQUFFLENBQUM7a0RBQ3BCO0lBRTdCO1FBREMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLEtBQUssRUFBRSxDQUFDOzJDQUMxQjtJQUxMLFFBQVE7UUFENUIsT0FBTztPQUNhLFFBQVEsQ0EyQzVCO0lBQUQsZUFBQztDQTNDRCxBQTJDQyxDQTNDcUMsRUFBRSxDQUFDLFNBQVMsR0EyQ2pEO2tCQTNDb0IsUUFBUSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbIi8vIExlYXJuIFR5cGVTY3JpcHQ6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvdHlwZXNjcmlwdC5odG1sXG4vLyAgLSBbRW5nbGlzaF0gaHR0cDovL3d3dy5jb2NvczJkLXgub3JnL2RvY3MvY3JlYXRvci9tYW51YWwvZW4vc2NyaXB0aW5nL3R5cGVzY3JpcHQuaHRtbFxuLy8gTGVhcm4gQXR0cmlidXRlOlxuLy8gIC0gW0NoaW5lc2VdIGh0dHBzOi8vZG9jcy5jb2Nvcy5jb20vY3JlYXRvci9tYW51YWwvemgvc2NyaXB0aW5nL3JlZmVyZW5jZS9hdHRyaWJ1dGVzLmh0bWxcbi8vICAtIFtFbmdsaXNoXSBodHRwOi8vd3d3LmNvY29zMmQteC5vcmcvZG9jcy9jcmVhdG9yL21hbnVhbC9lbi9zY3JpcHRpbmcvcmVmZXJlbmNlL2F0dHJpYnV0ZXMuaHRtbFxuLy8gTGVhcm4gbGlmZS1jeWNsZSBjYWxsYmFja3M6XG4vLyAgLSBbQ2hpbmVzZV0gaHR0cHM6Ly9kb2NzLmNvY29zLmNvbS9jcmVhdG9yL21hbnVhbC96aC9zY3JpcHRpbmcvbGlmZS1jeWNsZS1jYWxsYmFja3MuaHRtbFxuLy8gIC0gW0VuZ2xpc2hdIGh0dHA6Ly93d3cuY29jb3MyZC14Lm9yZy9kb2NzL2NyZWF0b3IvbWFudWFsL2VuL3NjcmlwdGluZy9saWZlLWN5Y2xlLWNhbGxiYWNrcy5odG1sXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbmV4cG9ydCBpbnRlcmZhY2UgSUpveVN0aWNrRGF0YSB7XG4gICAgdmVjdG9yOiBjYy5WZWMzLFxufVxuXG5AY2NjbGFzc1xuZXhwb3J0IGRlZmF1bHQgY2xhc3MgSm95U3RpY2sgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgQHByb3BlcnR5KHsgdHlwZTogY2MuTm9kZSwgZGlzcGxheU5hbWU6IFwi5pGH5p2G6IqC54K5XCIgfSlcbiAgICBqb3lTdGlja05vZGU6IGNjLk5vZGUgPSBudWxsO1xuICAgIEBwcm9wZXJ0eSh7IHR5cGU6IGNjLk5vZGUsIGRpc3BsYXlOYW1lOiBcIuadhuiKgueCuVwiIH0pXG4gICAgc3RpY2s6IGNjLk5vZGUgPSBudWxsO1xuXG4gICAgLy8g5Y2K5b6EXG4gICAgcHJpdmF0ZSBfcjogbnVtYmVyID0gMDtcbiAgICBvbkxvYWQoKSB7XG4gICAgICAgIHRoaXMuYWRkRXZlbnRMaXN0ZW5lcigpO1xuICAgICAgICB0aGlzLl9yID0gdGhpcy5qb3lTdGlja05vZGUud2lkdGggLyAyIC0gNTA7XG4gICAgfVxuICAgIHN0YXJ0KCkge1xuICAgICAgICBjb25zb2xlLmxvZyhcImNhb25pbWEgLUpveVN0aWNrXCIpO1xuICAgIH1cblxuICAgIGFkZEV2ZW50TGlzdGVuZXIoKSB7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9TVEFSVCwgdGhpcy5vblRvdWNoU3RhcnQsIHRoaXMpO1xuICAgICAgICB0aGlzLm5vZGUub24oY2MuTm9kZS5FdmVudFR5cGUuVE9VQ0hfTU9WRSwgdGhpcy5vblRvdWNoTW92ZSwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9FTkQsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgICAgIHRoaXMubm9kZS5vbihjYy5Ob2RlLkV2ZW50VHlwZS5UT1VDSF9DQU5DRUwsIHRoaXMub25Ub3VjaEVuZCwgdGhpcyk7XG4gICAgfVxuICAgIG9uVG91Y2hTdGFydChldmVudDogY2MuVG91Y2gpIHtcbiAgICAgICAgbGV0IHRvdWNoUG9zID0gdGhpcy5ub2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgdGhpcy5qb3lTdGlja05vZGUucG9zaXRpb24gPSB0b3VjaFBvcztcbiAgICB9XG4gICAgb25Ub3VjaE1vdmUoZXZlbnQ6IGNjLlRvdWNoKSB7XG4gICAgICAgIGxldCB0b3VjaFBvcyA9IHRoaXMuam95U3RpY2tOb2RlLmNvbnZlcnRUb05vZGVTcGFjZUFSPGNjLlZlYzM+KGNjLnYzKGV2ZW50LmdldExvY2F0aW9uKCkpKTtcbiAgICAgICAgbGV0IGRpc3RhbmNlID0gdG91Y2hQb3MubWFnKCk7XG4gICAgICAgIGxldCBwID0gdG91Y2hQb3Mubm9ybWFsaXplKCk7XG4gICAgICAgIGlmIChkaXN0YW5jZSA8PSB0aGlzLl9yKSB7XG4gICAgICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gdG91Y2hQb3M7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBsZXQgcmF0aW8gPSB0aGlzLl9yIC8gZGlzdGFuY2U7XG4gICAgICAgICAgICBsZXQgcG9zID0gY2MudjMoMCwgMCkubGVycCh0b3VjaFBvcywgcmF0aW8pO1xuICAgICAgICAgICAgdGhpcy5zdGljay5wb3NpdGlvbiA9IHBvcztcbiAgICAgICAgfVxuICAgIH1cbiAgICBvblRvdWNoRW5kKGV2ZW50OiBjYy5Ub3VjaCkge1xuICAgICAgICB0aGlzLnN0aWNrLnBvc2l0aW9uID0gY2MudjMoMCwgMCk7XG4gICAgfVxuICAgIC8vIHVwZGF0ZSAoZHQpIHt9XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9TY3JpcHQvaTE4bi9pMThuU3ByaXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxxQ0FBb0M7QUFDOUIsSUFBQSxLQUFxRixFQUFFLENBQUMsVUFBVSxFQUFoRyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQUEsRUFBRSxpQkFBaUIsdUJBQUEsRUFBRSxnQkFBZ0Isc0JBQUEsRUFBRSxnQkFBZ0Isc0JBQUEsRUFBRSxJQUFJLFVBQWtCLENBQUM7QUFPekc7SUFBZ0MsOEJBQVk7SUFBNUM7UUFBQSxxRUFtQ0M7UUFoQ1csaUJBQVcsR0FBVyxFQUFFLENBQUM7O0lBZ0NyQyxDQUFDO0lBOUJHLDBCQUFLLEdBQUw7UUFDSSxpQkFBTyxDQUFDLGVBQWUsQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUM7UUFDcEMsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO0lBQ3ZCLENBQUM7SUFHRCxzQkFBSSw4QkFBTTthQUFWO1lBQ0ksT0FBTyxJQUFJLENBQUMsV0FBVyxDQUFDO1FBQzVCLENBQUM7YUFFRCxVQUFXLEtBQWE7WUFDcEIsSUFBSSxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUM7WUFFekIsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxFQUFFLENBQUMsTUFBTSxDQUFDLENBQUM7WUFDMUMsSUFBSSxFQUFFLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxFQUFFO2dCQUNwQixpQkFBTyxDQUFDLFVBQVUsQ0FBQyxLQUFLLEVBQUUsVUFBQyxXQUFXO29CQUNsQyxJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7d0JBQ3BCLE1BQU0sQ0FBQyxXQUFXLEdBQUcsV0FBVyxDQUFDO3FCQUNwQztnQkFDTCxDQUFDLENBQUMsQ0FBQzthQUNOO1FBQ0wsQ0FBQzs7O09BYkE7SUFlRCxnQ0FBVyxHQUFYO1FBQ0ksSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDO0lBQ25DLENBQUM7SUFFRCw4QkFBUyxHQUFUO1FBQ0ksaUJBQU8sQ0FBQyxlQUFlLENBQUMsSUFBSSxFQUFFLEtBQUssQ0FBQyxDQUFDO0lBQ3pDLENBQUM7SUEvQkQ7UUFEQyxRQUFRLENBQUMsRUFBRSxPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7bURBQ0k7SUFRakM7UUFEQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsRUFBRSxDQUFDLE1BQU0sRUFBRSxDQUFDOzRDQUc3QjtJQWJRLFVBQVU7UUFMdEIsT0FBTztRQUNQLGlCQUFpQjtRQUNqQixnQkFBZ0IsQ0FBQyxFQUFFLENBQUMsTUFBTSxDQUFDO1FBQzNCLGdCQUFnQjtRQUNoQixJQUFJLENBQUMsZ0JBQWdCLENBQUM7T0FDVixVQUFVLENBbUN0QjtJQUFELGlCQUFDO0NBbkNELEFBbUNDLENBbkMrQixFQUFFLENBQUMsU0FBUyxHQW1DM0M7QUFuQ1ksZ0NBQVUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBpMThuTWdyIH0gZnJvbSBcIi4vaTE4bk1nclwiO1xuY29uc3QgeyBjY2NsYXNzLCBwcm9wZXJ0eSwgZXhlY3V0ZUluRWRpdE1vZGUsIGRpc2FsbG93TXVsdGlwbGUsIHJlcXVpcmVDb21wb25lbnQsIG1lbnUgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5AZXhlY3V0ZUluRWRpdE1vZGVcbkByZXF1aXJlQ29tcG9uZW50KGNjLlNwcml0ZSlcbkBkaXNhbGxvd011bHRpcGxlXG5AbWVudShcIuWkmuivreiogC9pMThuU3ByaXRlXCIpXG5leHBvcnQgY2xhc3MgaTE4blNwcml0ZSBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG5cbiAgICBAcHJvcGVydHkoeyB2aXNpYmxlOiBmYWxzZSB9KVxuICAgIHByaXZhdGUgaTE4bl9zdHJpbmc6IHN0cmluZyA9IFwiXCI7XG5cbiAgICBzdGFydCgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxTcHJpdGUodGhpcywgdHJ1ZSk7XG4gICAgICAgIHRoaXMuX3Jlc2V0VmFsdWUoKTtcbiAgICB9XG5cbiAgICBAcHJvcGVydHkoeyB0eXBlOiBjYy5TdHJpbmcgfSlcbiAgICBnZXQgc3RyaW5nKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5pMThuX3N0cmluZztcbiAgICB9XG5cbiAgICBzZXQgc3RyaW5nKHZhbHVlOiBzdHJpbmcpIHtcbiAgICAgICAgdGhpcy5pMThuX3N0cmluZyA9IHZhbHVlO1xuXG4gICAgICAgIGxldCBzcHJpdGUgPSB0aGlzLmdldENvbXBvbmVudChjYy5TcHJpdGUpO1xuICAgICAgICBpZiAoY2MuaXNWYWxpZChzcHJpdGUpKSB7XG4gICAgICAgICAgICBpMThuTWdyLl9nZXRTcHJpdGUodmFsdWUsIChzcHJpdGVGcmFtZSkgPT4ge1xuICAgICAgICAgICAgICAgIGlmIChjYy5pc1ZhbGlkKHNwcml0ZSkpIHtcbiAgICAgICAgICAgICAgICAgICAgc3ByaXRlLnNwcml0ZUZyYW1lID0gc3ByaXRlRnJhbWU7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSk7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBfcmVzZXRWYWx1ZSgpIHtcbiAgICAgICAgdGhpcy5zdHJpbmcgPSB0aGlzLmkxOG5fc3RyaW5nO1xuICAgIH1cblxuICAgIG9uRGVzdHJveSgpIHtcbiAgICAgICAgaTE4bk1nci5fYWRkT3JEZWxTcHJpdGUodGhpcywgZmFsc2UpO1xuICAgIH1cbn1cbiJdfQ==
+//------QC-SOURCE-SPLIT------
+
+                (function() {
+                    var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
+                    var __module = nodeEnv ? module : {exports:{}};
+                    var __filename = 'preview-scripts/assets/tempAssets/test.js';
+                    var __require = nodeEnv ? function (request) {
+                        return cc.require(request);
+                    } : function (request) {
+                        return __quick_compile_project__.require(request, __filename);
+                    };
+                    function __define (exports, require, module) {
+                        if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
+cc._RF.push(module, '6dac3oGVq5H46ufEOH+Fhwd', 'test');
+// tempAssets/test.ts
+
+console.log("caonima");
+
+cc._RF.pop();
+                    }
+                    if (nodeEnv) {
+                        __define(__module.exports, __require, __module);
+                    }
+                    else {
+                        __quick_compile_project__.registerModuleFunc(__filename, function () {
+                            __define(__module.exports, __require, __module);
+                        });
+                    }
+                })();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy90ZW1wQXNzZXRzL3Rlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsT0FBTyxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUMsQ0FBQyIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKFwiY2FvbmltYVwiKTsiXX0=
 //------QC-SOURCE-SPLIT------

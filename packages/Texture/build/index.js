@@ -37,19 +37,40 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.main = void 0;
-var fileTool_1 = require("./fileTool");
+var FileUnit_1 = require("./unit/FileUnit");
+var process_1 = require("process");
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var imgDatas, fileDatas;
+        var indexPath, artPath, replacePath, assetsArr;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fileTool_1.FileUnit.readDir("../../assets")];
+                case 0:
+                    indexPath = process_1.argv[2];
+                    artPath = process_1.argv[3];
+                    replacePath = process_1.argv[4];
+                    assetsArr = [];
+                    return [4 /*yield*/, FileUnit_1.FileUnit.read(indexPath, function (data) {
+                            assetsArr.push(data);
+                        })];
                 case 1:
                     _a.sent();
-                    imgDatas = fileTool_1.FileUnit.getFileDatasByFileType(fileTool_1.EnumFileType.IMG);
-                    fileDatas = fileTool_1.FileUnit.getFileDatasByFileType(fileTool_1.EnumFileType.FILE);
-                    console.log(imgDatas);
-                    console.log(fileDatas);
+                    return [4 /*yield*/, FileUnit_1.FileUnit.read(artPath, function (data) {
+                            var dthName = data.fileName + data.fileSuffixType;
+                            var isfind = false;
+                            for (var i = 0; i < assetsArr.length; i++) {
+                                var srcAssetData = assetsArr[i];
+                                var fileName = srcAssetData.fileName + srcAssetData.fileSuffixType;
+                                if (fileName == dthName) {
+                                    isfind = true;
+                                    FileUnit_1.FileUnit.copy(data.path, srcAssetData.path);
+                                }
+                            }
+                            if (!isfind) {
+                                FileUnit_1.FileUnit.copy(data.path, replacePath);
+                            }
+                        })];
+                case 2:
+                    _a.sent();
                     return [2 /*return*/];
             }
         });

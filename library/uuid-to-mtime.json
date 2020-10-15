@@ -535,13 +535,13 @@
     "relativePath": "Script/joystick"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1602491841511,
-    "meta": 1602491841516,
+    "asset": 1602729648588,
+    "meta": 1602729648593,
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1602322349459,
-    "meta": 1602322481652,
+    "asset": 1602659754919,
+    "meta": 1602729369746,
     "relativePath": "Texture"
   },
   "1e9398ff-616c-4440-a54e-885314aeb802": {
@@ -553,11 +553,6 @@
     "asset": 1602322349458,
     "meta": 1602322481695,
     "relativePath": "Texture/joystick/ui_controlbutton_01.png"
-  },
-  "6aa0aa6a-ebee-4155-a088-a687a6aadec4": {
-    "asset": 1602322349456,
-    "meta": 1602322481697,
-    "relativePath": "Texture/HelloWorld.png"
   },
   "a8027877-d8d6-4645-97a0-52d4a0123dba": {
     "asset": 1602322349459,
@@ -578,16 +573,6 @@
     "asset": 1602469977539,
     "meta": 1602470339652,
     "relativePath": "Script/event/EventMrg.ts"
-  },
-  "3ceecf29-1a80-4905-b0d4-14c6eb36be6c": {
-    "asset": 1602473804877,
-    "meta": 1602473804917,
-    "relativePath": "New Effect.effect"
-  },
-  "d1628796-545f-4377-9430-b8dd79b786a5": {
-    "asset": 1602473878594,
-    "meta": 1602473878597,
-    "relativePath": "New Material.mtl"
   },
   "006b45e2-cd26-4e19-9f0c-913481c0078c": {
     "asset": 1602489459729,
@@ -618,5 +603,80 @@
     "asset": 1602492882998,
     "meta": 1602492917344,
     "relativePath": "Script/CustomComponent.ts"
+  },
+  "f88378ac-f83e-4d18-89f9-ca4253115527": {
+    "asset": 1602730717638,
+    "meta": 1602730717643,
+    "relativePath": "tempAssets"
+  },
+  "3d1ea983-10b8-4359-8c0d-ca708a6fab0e": {
+    "asset": 1602732198364,
+    "meta": 1602732226632,
+    "relativePath": "tempAssets/ddd.txt"
+  },
+  "6dac3a06-56ae-47e3-ab9f-10e1fe161c1d": {
+    "asset": 1602732198365,
+    "meta": 1602732226636,
+    "relativePath": "tempAssets/test.ts"
+  },
+  "7864444c-af2b-45a5-8554-f4d258eb0841": {
+    "asset": 1602732198364,
+    "meta": 1602732226653,
+    "relativePath": "tempAssets/email_word.png"
+  },
+  "efabdba1-4ff7-4bc3-a842-e1b06bb50444": {
+    "asset": 1602732198357,
+    "meta": 1602732226655,
+    "relativePath": "tempAssets/tst.txt"
+  },
+  "c0a65f6a-ef96-4ed5-81e9-c03f3bf16755": {
+    "asset": 1602732198369,
+    "meta": 1602732226667,
+    "relativePath": "tempAssets/titile_infobg.png"
+  },
+  "3d4be3cc-36e9-410d-849f-2f2ef818496a": {
+    "asset": 1602732198374,
+    "meta": 1602732226683,
+    "relativePath": "tempAssets/ui_email_bg.png"
+  },
+  "84c3fcb9-990b-4a00-af47-b56ba856491f": {
+    "asset": 1602732198371,
+    "meta": 1602732226693,
+    "relativePath": "tempAssets/ui_email_bonusicon_bg.png"
+  },
+  "e1561a64-9e68-4fd8-b5f3-dc2328d01d08": {
+    "asset": 1602732198369,
+    "meta": 1602732226707,
+    "relativePath": "tempAssets/ui_email_icon_bang.png"
+  },
+  "b910a710-160f-4edf-bb6b-2cccfce629ae": {
+    "asset": 1602732198371,
+    "meta": 1602732226723,
+    "relativePath": "tempAssets/ui_email_icon_known.png"
+  },
+  "460bceb3-8d8a-4a29-a533-b86ab9bf58dd": {
+    "asset": 1602732198374,
+    "meta": 1602732226741,
+    "relativePath": "tempAssets/ui_email_infoline01.png"
+  },
+  "6cd40a59-c86b-437a-a1fe-330588e794ff": {
+    "asset": 1602732198374,
+    "meta": 1602732226756,
+    "relativePath": "tempAssets/ui_email_infoline02.png"
+  },
+  "226aaad5-98f6-472c-8322-afa8b68f856a": {
+    "asset": 1602732198370,
+    "meta": 1602732226787,
+    "relativePath": "tempAssets/ui_email_unknown.png"
+  },
+  "e488f16d-0697-44bf-9802-826898abe32b": {
+    "asset": 1602732198378,
+    "meta": 1602732226803,
+    "relativePath": "tempAssets/ui_email_popup_bg.png"
+  },
+  "6aa0aa6a-ebee-4155-a088-a687a6aadec4": {
+    "asset": 1602732198370,
+    "meta": 1602732226817,
+    "relativePath": "Texture/HelloWorld.png"
   }
 }
