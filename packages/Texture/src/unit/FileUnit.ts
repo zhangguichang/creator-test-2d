@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync, createReadStream, createWriteStream, existsSync, unlinkSync, rmdirSync, mkdirSync, writeFileSync } from "fs";
+import { readFileSync, readdirSync, statSync, createReadStream, createWriteStream, existsSync, unlinkSync, rmdirSync, mkdirSync, writeFileSync, copyFileSync } from "fs";
 import path, { dirname } from "path";
 import { IFileData } from "../data/fileData";
 import { EnumFileSuffixType, EnumFileType } from "../data/enumFile";
@@ -142,15 +142,17 @@ export class FileUnit {
                     dstPath = path.join(dstPath, srcName);
                 }
             }
-            let readable = createReadStream(srcPath);
-            // 创建写入流
-            let writable = createWriteStream(dstPath);
-            // 通过管道来传输流
-            readable.pipe(writable);
+            copyFileSync(srcPath, dstPath);
+            // let readable = createReadStream(srcPath);
+            // // 创建写入流
+            // let writable = createWriteStream(dstPath);
+            // // 通过管道来传输流
+            // readable.pipe(writable);
         }
         if (this.mkdirs(dstPath)) {
             let srcStat = statSync(srcPath);
             if (srcStat.isFile()) {
+                // copyFileSync(srcPath, dstPath);
                 copyWrite(srcPath, dstPath);
             } else if (srcStat.isDirectory()) {
                 let dirs = readdirSync(srcPath);
@@ -159,6 +161,7 @@ export class FileUnit {
                     let nextDstPath = path.join(dstPath, value);
                     let stat = statSync(nextSrcPath);
                     if (stat.isFile()) {
+                        // copyFileSync(nextSrcPath, nextSrcPath);
                         copyWrite(nextSrcPath, nextDstPath);
                     } else {
                         this.copy(nextSrcPath, nextDstPath);

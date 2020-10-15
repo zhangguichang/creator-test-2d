@@ -241,15 +241,17 @@ var FileUnit = /** @class */ (function () {
                             dstPath = path_1.default.join(dstPath, srcName);
                         }
                     }
-                    var readable = fs_1.createReadStream(srcPath);
-                    // 创建写入流
-                    var writable = fs_1.createWriteStream(dstPath);
-                    // 通过管道来传输流
-                    readable.pipe(writable);
+                    fs_1.copyFileSync(srcPath, dstPath);
+                    // let readable = createReadStream(srcPath);
+                    // // 创建写入流
+                    // let writable = createWriteStream(dstPath);
+                    // // 通过管道来传输流
+                    // readable.pipe(writable);
                 };
                 if (this.mkdirs(dstPath)) {
                     srcStat = fs_1.statSync(srcPath);
                     if (srcStat.isFile()) {
+                        // copyFileSync(srcPath, dstPath);
                         copyWrite(srcPath, dstPath);
                     }
                     else if (srcStat.isDirectory()) {
@@ -259,6 +261,7 @@ var FileUnit = /** @class */ (function () {
                             var nextDstPath = path_1.default.join(dstPath, value);
                             var stat = fs_1.statSync(nextSrcPath);
                             if (stat.isFile()) {
+                                // copyFileSync(nextSrcPath, nextSrcPath);
                                 copyWrite(nextSrcPath, nextDstPath);
                             }
                             else {
